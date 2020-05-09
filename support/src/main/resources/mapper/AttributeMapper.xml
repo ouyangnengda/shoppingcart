@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zimingsir.support.dao.AttributeDAO">
+
+    <resultMap id="attributeList" type="com.zimingsir.support.pojo.Attribute">
+        <result column="attribute_name" property="attributeName"/>
+        <collection property="values"  ofType="com.zimingsir.support.pojo.Value">
+            <id column="id" property="id"/>
+            <result column="name" property="name"/>
+        </collection>
+    </resultMap>
+
+    <select id="getAttributeByCommodityId" parameterType="Integer" resultMap="attributeList">
+        select id,attribute_name,name from cart_value where is_effective = 1 and commodity_id = #{id};
+    </select>
+
+</mapper>

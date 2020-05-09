@@ -10,5 +10,7 @@ import lombok.Data;
 @Data
 public class Token {
     private String value;
-    private Integer expired;
+    private Long expired;
+    private Integer userId;
+
 }

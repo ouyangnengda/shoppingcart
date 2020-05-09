@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html  lang="zh_CN" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr th:each="commodity : ${commodities}">
+        <td>
+<!--            TODO-->
+            <a th:href="@{'/commodity/' + ${commodity.id}}">
+                <div id="commodityBox" style="display: flex">
+                    <img th:src="@{${commodity.imgUrl}}" height="400" alt="商品效果图" id="photo"/>
+                    <div style="font-size: 30px">
+                        <div style="display: flex">品牌：
+                            <div th:text="${commodity.brand}">品牌：</div>
+                        </div>
+                        <div style="display: flex">商品名称:
+                            <div th:text="${commodity.name}">商品名称：</div>
+                        </div>
+                        <div style="display: flex">商品价格:
+                            <div th:text="${commodity.price}">商品价格：</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

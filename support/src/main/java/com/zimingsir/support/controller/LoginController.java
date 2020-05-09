@@ -1,17 +1,14 @@
 package com.zimingsir.support.controller;
 
 import com.zimingsir.support.pojo.Commodity;
-import com.zimingsir.support.pojo.Token;
 import com.zimingsir.support.service.CommodityService;
 import java.util.List;
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * @Description: 登陆控制器
@@ -38,7 +35,7 @@ public class LoginController {
     @RequestMapping("/login")
     public String login(HttpServletRequest request, HttpServletResponse response) {
 
-        // 判断用户是否启用cookie
+        // 合并本地购物车
 
 
         return "login";
@@ -46,9 +43,9 @@ public class LoginController {
 
 
 
-    @RequestMapping("/doLogin")
+    /*@RequestMapping("/doLogin")
     public String doLogin(@RequestParam("userName") String userName, @RequestParam("password") String password, HttpServletRequest request) {
 
-    }
+    }*/
 
 }

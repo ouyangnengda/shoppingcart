@@ -1,8 +1,11 @@
 package com.zimingsir.support.service.Impl;
 
+import com.zimingsir.support.dao.CommodityDAO;
 import com.zimingsir.support.pojo.Commodity;
 import com.zimingsir.support.service.CommodityService;
 import java.util.List;
+import java.util.Optional;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -12,6 +15,8 @@ import org.springframework.stereotype.Service;
  **/
 @Service
 public class CommodityServiceImpl implements CommodityService {
+    @Autowired
+    CommodityDAO commodityDAO;
 
     @Override
     public List<Commodity> getCommodityList() {
@@ -19,10 +24,14 @@ public class CommodityServiceImpl implements CommodityService {
     }
 
     @Override
-    public Commodity getCommodityById(int id) {
-        if (id > 0) {
-            //通过dao获得商品对象，如果对象不为null,返回这个对象
+    public Commodity getCommodityById(Integer id) {
+        if (id != null && id > 0) {
+            Optional<Commodity> commodityOption = Optional.ofNullable(commodityDAO.getCommodityById(id));
+            if (commodityOption.isPresent()) {
+                return commodityOption.get();
+            }
         }
         return null;
     }
+
 }

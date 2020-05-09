@@ -1,24 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2d5c991a-be51-4985-b434-4e4f77149bb1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Administrator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/shoppingcartapi/pojo/ShoppingcartOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/shoppingcartapi/service/Impl/ShoppingcartImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/shoppingcartapi/service/Shoppingcart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/Interceptor/TokenInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/controller/CommodityController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/controller/ShoppingcartController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/pojo/Commodity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/pojo/Token.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/service/CommodityService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/service/Impl/CommodityServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+    <list default="true" id="0dbeaad6-ee24-4d0f-b8d8-38586af58aa1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_rc_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_2_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_2_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_2_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/shoppingcartapi/dubbo/ShoppingcartDubbo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/Util/VariableUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/dao/AttributeDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/dao/CommodityDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/dao/TokenDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/pojo/Attribute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/pojo/Value.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/service/Impl/LocalCartServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/service/Impl/TokenServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/service/LocalCartService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/service/TokenService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/support/src/main/resources/mapper/AttributeMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/support/src/main/resources/mapper/CommodityMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/support/src/main/resources/static/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/support/src/main/resources/templates/commodity.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/support/src/main/resources/templates/searchResult.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/support/src/test/java/com/zimingsir/support/controller/CommodityControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/support/src/test/java/com/zimingsir/support/dao/CommodityDAOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Administrator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/1/010dea03000301f90ac79b776560baf825dfcdaf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/6/0630ad025feb1033b05129cc7907fd66f81173cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/6/063a782fb99267553a9a09f8377de690b0f8e18a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/6/06e4ac9e590e93114618d6efba11f942b7043925" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/7/07b45662e7215cfb2a2461b0df8433077ccd7d7d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/8/0819c7cfcd88352e170585737afd0421332f4c4d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/9/093eb2b2a937d8481d418db55efa4e87d44ed5fc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/c/0c8e01e4f333ee84753f213f3115a15d58ef1b65" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/3/133b79aac2fa366b94a1fa8f017905595bf92c25" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/3/139991e71c0a1560c707df8f53835a436d806d0b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/4/14896c9d8ddbbe8c8b7ab98f7d28b590d5c63b83" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/7/17f7babae87b48dc52759fa71bcf399b359cc78c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/8/18f0eda0db0a483e46aea0432680fc3c9e6b58b9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/a/1a57d1d84fbfbbd6d0dcb4e4612ea8a875b295db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/d/1daa2a9cb5a9a1949b6fac89aef50d7d923783fe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/f/1f32c4e97004076ac7e5b7cebc508db91bbb9228" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/3/23da065309b53d9bde9fd9158eee9488e2afac54" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/4/245aa3798b1f1353b302826ecfdd49939f2fd8d1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/4/24df693037c2aca1b6bf992773c33a8c31453fe7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/6/26622c40e76c98afcaf30d32a1572b949b2f1aa2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/a/2a744585456c54cc5bd46b46b81685fe23d174e0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/b/2b96245061a58d680115d4bf88972e8de69594ae" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/d/2d879485abb08850ad0b49a803f9632d4bd7138b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/f/2ffddd07ad1c0c36c3bd0eb7cef686df87403348" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/5/3599738c9f6cd305cf3f90df861b6ce7d64059bf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/6/36c6d8ad58b461abd94ffa86db0d82983c7582b1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/7/374a78eee3e582ccecb4b634312320983ac777c7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/7/37c589d8164c69c1919af103a56413a6d5b32a77" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/9/3979360384b83cedf1f45c555cc7f012915289a7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/9/39fc228eea8e154f669c929d3e08b6abc21fe14f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/b/3bf9bc8c279aa14a49265892a5bf33a887cba260" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/5/45ffd0f4098bc87650c375087d3a202e11ab7a34" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/6/463a6250e588649467806e77882acc408edc123c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/7/4726d30df70930039ff6a3d74f8656cac7f0f259" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/8/482fe248ab09a0c5ea5fe0919a983dada38954e7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/8/48e19734addfafd359e84ad771182fa8703a4c44" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/b/4b784d657a8713c692976a5b5a782a6df8d8295b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/7/575349fb8f9bb3c0cd71b0c004807b258ecdb225" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/9/59870c541fbe8daa66019c43ca8274a372cc4320" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/d/5dc5b2eeb3d2841cf5a85d19a6e9af3054c37fca" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/5/652fcdd592f77adb6a0ff30a12c755b5e9affdd1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/8/682f61e4f3359d1fef9c56bc33f1e7da1b59c3a4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/a/6af64acd18daf40126bc5ce3d5268d064afdbf3f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/f/6f2bcea28e31728cb204a5a8d94312872b1bbd2b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/0/7026ef4f7d3f783503f86f47a2af6bccfab12143" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/2/72b4a4b720aae78480261c7fe1d2456d41f5ba4f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/3/735e0febb4e68215722caff1db3418755cbf9c18" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/5/75a5efe07bfd556010ee7fac1ea79d75c68724a1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/8/782ba24545de0dd31b8c17f7e80142a3851eef7b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/8/783df73dfd4aab6e1bbc4ad18ebadeae6ffca3f4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/9/796e618c37c2cb980dd1b45478a5fc10a47bab35" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/a/7a5be3fc255bdbb9f33bf6e93fefa14b21aa4279" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/b/7b568926fb5fe9bb3c48b5a1ae0a6baf584072fc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/c/7c81ba4baa50d32307fa090c2970f7e03ecba056" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/5/858474d8d215ec25f84b3be6f80418553ae8d1df" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/7/873befbc5a33730cd2ccaf02a473994e162fa5b4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/4/9441e6b1356fbd398758253cd275774b28325a15" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/6/962ba66301d4387686a24686e00d76e409796162" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/7/97df7c556830a60ed5ca8d0db86f0696857fc77e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/8/984821763dc8f4dc6c8d7bf47a22526e6059d235" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/8/9852914940330060766fca305c4dc24fa2beddf5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9f594e90f4f66752dc32a1fb95f99e1142cb6f27" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/0/a0744675f045943f4cb4efe35b8648c66b35c82c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/7/a73eb8d16d18d34bdba25ab6c7cfe0204542b369" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/9/a9ec7307c79d08f822219d9908f60d0559386621" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/b/bb706f2eac2c270a229b572ec83ed01c90f34412" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/b/bbcf560bc6629518d8df2cc946d04946846a0c92" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/b/bbe9d376f1e5370d797cdd422872b5efd43ce076" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/d/bd241af987c00dacbc40600d510fc81492d2d289" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/f/bf53c8dab3a932da0c967d6a43cbe7c1a69c91b4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/5/c56e0e9580fe9872abbd552f3a72acb106b7cfef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/0/d0e02e41e8ebb27c79d94666ff02452f520a9926" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/3/d3cc308d44ca94b3d5a11e4f92136a53e5c2f637" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/5/d547cb1fb5bdfb2adb7662382f960595e698dbd1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/5/d586639a1cda5d3561bb01f288e6907359d79866" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/7/d748d8766080efc90fdc1cab153cb0f95a859ff1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/8/d8aa156cec12e7114138ef397b652049013f763d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/f/df4af0c84b0abadd7244c17dcaab48acaaabc1e2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/f/df9ea0d704cf047f3785cb3c12fee0cf8b913eae" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/f/dfb8aa1df21e244fddc551075409a5903a1b7e8e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/f/dfec86f16a1b258bc8da1681bdca49ae426491e1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/0/e0b227884b286439d41a206dd994e9861a62a685" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/4/e4d5b70b5319e206f2d5274f2049e8454e9706bc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/7/e76b8ce74e0ea31cede1c83c1be582c4c9b7058d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/8/e8076da2b8727671c0ba05c5cf03e9635cf5d664" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/8/e8e184544d7cc6433897f0d62e29bd6f514e8d6d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/a/ea27eb1eadbff7519343f3a4c6bf01f78b7e334e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/1/f1b7c86a3b40269011d75233e6aa94e2ace1eb6a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/3/f327cc313f29b08696a82daf03c70ab88335f92b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/9/f9a126ced05cbebddeae91f64ac40d1dd2d464b7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/b/fbd7113a5488943d37d4451dedb65c2b2f634e6e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/e/fe857d1d58485aac3ffbd4d9ae0081a6106345a0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/f/ffad633225ec9c0ebe5fec2da89e1cc38e4e288d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/f/ffdfa4fb6743d86b16ed65a9ad10dc877371a0b7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/shoppingcartapi/controller/Hello.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/shoppingcartapi/pojo/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingcart.iml" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingcart.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/support/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/support/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/Interceptor/TokenInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/Interceptor/TokenInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/SupportApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/SupportApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/controller/CommodityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/controller/CommodityController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/controller/ShoppingcartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/controller/ShoppingcartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/pojo/Commodity.java" beforeDir="false" afterPath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/pojo/Commodity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/pojo/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/pojo/Token.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/service/CommodityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/service/CommodityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/service/Impl/CommodityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/service/Impl/CommodityServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/support/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/support/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/support/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/support/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/support/src/main/resources/log4j2.properties" beforeDir="false" afterPath="$PROJECT_DIR$/support/src/main/resources/log4j2.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/support/src/test/java/com/zimingsir/support/SupportApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/support/src/test/java/com/zimingsir/support/SupportApplicationTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,75 +159,78 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="cart@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="cart@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="cart@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="cart: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="cart@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="cart: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="cart_commodity: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/shoppingcart.iml">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/support/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/shoppingcartapi/pojo/Student.java" />
-        <option value="$PROJECT_DIR$/shoppingcart-api/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/shoppingcartapi/controller/Hello.java" />
-        <option value="$PROJECT_DIR$/shoppingcart-api/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/shoppingcart-api/src/main/resources/log4j2.properties" />
+        <option value="$PROJECT_DIR$/support/src/test/java/com/zimingsir/support/dao/CommodityDAOTest.java" />
         <option value="$PROJECT_DIR$/support/src/main/resources/log4j2.properties" />
-        <option value="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/shoppingcartapi/pojo/ShoppingcartOperation.java" />
-        <option value="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/shoppingcartapi/service/shoppingcart.java" />
-        <option value="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/shoppingcartapi/service/Shoppingcart.java" />
-        <option value="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/shoppingcartapi/service/Impl/ShoppingcartImpl.java" />
-        <option value="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/pojo/Token.java" />
-        <option value="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/Interceptor/TokenInterceptor.java" />
-        <option value="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/controller/CommodityController.java" />
-        <option value="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/service/CommodityService.java" />
-        <option value="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/service/Impl/CommodityServiceImpl.java" />
-        <option value="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/controller/ShoppingcartController.java" />
+        <option value="$PROJECT_DIR$/support/src/main/resources/application-dev.yml" />
+        <option value="$PROJECT_DIR$/support/src/main/resources/application.yml" />
       </list>
     </option>
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="createModuleGroups" value="true" />
-        <option name="importAutomatically" value="true" />
-        <option name="vmOptionsForImporter" value="-Xmx768m" />
-      </MavenImportingSettings>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="x" value="452" />
-    <option name="y" value="69" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="605" />
+    <option name="y" value="8" />
     <option name="width" value="683" />
     <option name="height" value="728" />
-  </component>
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -106,7 +238,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -157,27 +288,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="support" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shoppingcart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shoppingcart" type="462c0819:PsiDirectoryNode" />
-              <item name="support" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="support" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shoppingcart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shoppingcart" type="462c0819:PsiDirectoryNode" />
-              <item name="support" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="support" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shoppingcart" type="b2602c69:ProjectViewProjectNode" />
@@ -187,38 +298,60 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="shoppingcart" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shoppingcart" type="462c0819:PsiDirectoryNode" />
+              <item name="support" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shoppingcart" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shoppingcart" type="462c0819:PsiDirectoryNode" />
+              <item name="support" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shoppingcart" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shoppingcart" type="462c0819:PsiDirectoryNode" />
+              <item name="support" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="support" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shoppingcart" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shoppingcart" type="462c0819:PsiDirectoryNode" />
+              <item name="support" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="support" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="extract.method.default.visibility" value="private" />
+    <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\PluginSoftware\shoppingcart\support\src\main\resources" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.zimingsir.support.service.Impl" />
-      <recent name="com.zimingsir.shoppingcartapi.service.Impl" />
-    </key>
+    <property name="settings.editor.selected.configurable" value="com.zeroturnaround.javarebel.idea.plugin.settings.JRebelSettingsComponent" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -232,7 +365,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ShoppingcartApiApplication">
+  <component name="RunManager" selected="JUnit.CommodityDAOTest.getCommodityById">
+    <configuration name="CommodityDAOTest.getCommodityById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="support" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zimingsir.support.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zimingsir.support.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.zimingsir.support.dao.CommodityDAOTest" />
+      <option name="METHOD_NAME" value="getCommodityById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ShoppingcartApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="shoppingcart-api" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.zimingsir.shoppingcartapi.ShoppingcartApiApplication" />
@@ -247,311 +396,191 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CommodityDAOTest.getCommodityById" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2d5c991a-be51-4985-b434-4e4f77149bb1" name="Default Changelist" comment="" />
-      <created>1586850280420</created>
+      <changelist id="0dbeaad6-ee24-4d0f-b8d8-38586af58aa1" name="Default Changelist" comment="" />
+      <created>1588947324440</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1586850280420</updated>
-      <workItem from="1586850287833" duration="599000" />
-      <workItem from="1586851007705" duration="3072000" />
-      <workItem from="1586866163157" duration="33000" />
-      <workItem from="1587186513576" duration="3978000" />
-      <workItem from="1587202966114" duration="1923000" />
-      <workItem from="1587205001861" duration="4975000" />
+      <updated>1588947324440</updated>
+      <workItem from="1588947332252" duration="211000" />
+      <workItem from="1588992523075" duration="54000" />
+      <workItem from="1589006428021" duration="2767000" />
     </task>
-    <task id="LOCAL-00001" summary="添加了Web依赖，没添加Mybatis，可以接收请求。">
-      <created>1586851410927</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1586851410927</updated>
-    </task>
-    <task id="LOCAL-00002" summary="1. 添加了 slf4j 配置文件&#10;2. 添加了 application-dev.yml 和 application-pro.yml">
-      <created>1586853541902</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1586853541902</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="CommodityDAOTest_getCommodityById - 2020.05.09 at 15h 03m 09s.xml">
+      <configuration name="CommodityDAOTest.getCommodityById" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommodityDAOTest_getCommodityById - 2020.05.09 at 15h 09m 54s.xml">
+      <configuration name="CommodityDAOTest.getCommodityById" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommodityDAOTest_getCommodityById - 2020.05.09 at 15h 12m 47s.xml">
+      <configuration name="CommodityDAOTest.getCommodityById" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommodityDAOTest_getCommodityById - 2020.05.09 at 15h 15m 50s.xml">
+      <configuration name="CommodityDAOTest.getCommodityById" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommodityDAOTest_getCommodityById - 2020.05.09 at 15h 16m 47s.xml">
+      <configuration name="CommodityDAOTest.getCommodityById" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommodityDAOTest_getCommodityById - 2020.05.09 at 15h 17m 51s.xml">
+      <configuration name="CommodityDAOTest.getCommodityById" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommodityDAOTest_getCommodityById - 2020.05.09 at 15h 18m 43s.xml">
+      <configuration name="CommodityDAOTest.getCommodityById" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14580000" />
+    <option name="totallyTimeSpent" value="3032000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="768" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27525622" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
-      <window_info id="JRebel" order="3" side_tool="true" />
-      <window_info id="Image Layers" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="UI Designer" order="6" />
-      <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info id="Learn" order="8" />
-      <window_info id="Web" order="9" side_tool="true" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Database Console" weight="0.32924962" />
+      <window_info anchor="bottom" id="JProfiler" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5769231" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3782542" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Spring" order="7" sideWeight="0.49924013" weight="0.32867134" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007599" side_tool="true" weight="0.32867134" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49924013" weight="0.32867134" />
-      <window_info anchor="bottom" id="SonarLint" order="12" sideWeight="0.49924013" weight="0.32867134" />
-      <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.49924013" weight="0.32867134" />
-      <window_info anchor="bottom" id="JRebel Console" order="15" side_tool="true" />
-      <window_info anchor="bottom" id="Java Enterprise" order="16" />
-      <window_info anchor="bottom" id="JProfiler" order="17" />
-      <window_info anchor="bottom" id="JRebel Executor" order="18" />
-      <window_info anchor="bottom" id="FindBugs-IDEA" order="19" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="SonarLint" order="12" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" />
+      <window_info anchor="bottom" id="Database Changes" order="14" />
+      <window_info anchor="bottom" id="Version Control" order="15" />
+      <window_info anchor="bottom" id="Messages" order="16" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="SciView" order="9" />
-      <window_info anchor="right" id="Bean Validation" order="10" />
-      <window_info anchor="right" id="ASMPlugin" order="11" />
-      <window_info anchor="right" id="Word Book" order="12" side_tool="true" />
+      <window_info anchor="right" id="Word Book" order="6" side_tool="true" />
+      <window_info anchor="right" id="Database" order="7" weight="0.329429" />
+      <window_info anchor="right" id="SciView" order="8" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="right" id="Theme Preview" order="10" />
+      <window_info anchor="right" id="Bean Validation" order="11" />
+      <window_info anchor="right" id="ASMPlugin" order="12" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加了Web依赖，没添加Mybatis，可以接收请求。" />
-    <MESSAGE value="1. 添加了 slf4j 配置文件&#10;2. 添加了 application-dev.yml 和 application-pro.yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. 添加了 slf4j 配置文件&#10;2. 添加了 application-dev.yml 和 application-pro.yml" />
-  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/shoppingcart-api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/support/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+        <state relative-caret-position="187">
+          <caret line="62" column="19" selection-start-line="62" selection-start-column="19" selection-end-line="62" selection-end-column="19" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/dao/AttributeDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shoppingcart-api/.mvn/wrapper/MavenWrapperDownloader.java">
+    <entry file="file://$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/dao/TokenDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#4825#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="170">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.12/lombok-1.18.12.jar!/lombok/Value.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.12/lombok-1.18.12-sources.jar!/lombok/Value.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shoppingcart-api/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shoppingcart-api/src/main/resources/application-dev.yml">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8779e503-8990-403e-ba49-76979f860d64/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/shoppingcart-api/src/main/resources/log4j2.properties">
+    <entry file="file://$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/dao/CommodityDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/support/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shoppingcart-api/src/main/resources/application-pro.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/support/src/main/resources/application-pro.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/shoppingcartapi/controller/Hello.java" />
-    <entry file="file://$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/shoppingcartapi/pojo/Student.java" />
-    <entry file="file://$PROJECT_DIR$/shoppingcart-api/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/shoppingcartapi/ShoppingcartApiApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+    <entry file="das://8779e503-8990-403e-ba49-76979f860d64/schema/cart/table/cart_commodity">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/SupportApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/pojo/Token.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/shoppingcartapi/service/Shoppingcart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/shoppingcartapi/service/Impl/ShoppingcartImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/shoppingcartapi/pojo/ShoppingcartOperation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/support/src/main/resources/application-dev.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/Interceptor/TokenInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/pojo/Commodity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        <state relative-caret-position="102">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/support/src/main/resources/log4j2.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+        <state relative-caret-position="121">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.5.RELEASE/spring-web-5.2.5.RELEASE.jar!/org/springframework/web/bind/annotation/PathVariable.class">
+    <entry file="file://$PROJECT_DIR$/support/src/test/java/com/zimingsir/support/dao/CommodityDAOTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/service/Impl/CommodityServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/service/CommodityService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
+        <state relative-caret-position="240">
+          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/controller/CommodityController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="42" lean-forward="true" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/controller/ShoppingcartController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shoppingcart.iml">
+    <entry file="file://$PROJECT_DIR$/support/src/main/resources/application-pro.yml">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/support/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="57" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/support/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
