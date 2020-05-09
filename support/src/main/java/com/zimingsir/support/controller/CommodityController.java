@@ -2,11 +2,13 @@ package com.zimingsir.support.controller;
 
 import com.zimingsir.support.dao.AttributeDAO;
 import com.zimingsir.support.dao.CommodityDAO;
+import com.zimingsir.support.dubbo.ShoppingCartApi;
 import com.zimingsir.support.pojo.Attribute;
 import com.zimingsir.support.pojo.Commodity;
 import com.zimingsir.support.service.CommodityService;
 import java.util.List;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -29,6 +31,14 @@ public class CommodityController {
         this.attributeDAO = attributeDAO;
     }
 
+    @Reference
+    ShoppingCartApi cart;
+
+    @RequestMapping("/test")
+    @ResponseBody
+    public String test() {
+        return cart.select(1, "1_3_5");
+    }
     @GetMapping("/showCommodity")
     public String showCommodity(Model model) {
         List<Commodity> commodities = commodityDAO.getAllCommodity();

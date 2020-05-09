@@ -12,3 +12,13 @@ mybatis:
     #    开启驼峰映射
     map-underscore-to-camel-case: true
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+dubbo:
+  application:
+    name: support
+  protocol:
+    name: dubbo
+    port: 20880
+  registry:
+    address: zookeeper://localhost:2181
+  scan:
+    base-packages: com.zimingsir.support.dubbo
