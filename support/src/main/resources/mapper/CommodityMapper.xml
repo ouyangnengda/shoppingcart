@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.zimingsir.support.dao.CommodityDAO">
+<mapper namespace="com.zimingsir.cart.dao.CommodityDAO">
 
-    <select id="getAllCommodity" resultType="com.zimingsir.support.pojo.Commodity">
-        select id, name, img_url, brand, shop_name, price from cart_commodity where is_effective = 1;
+    <select id="getAllCommodity" resultType="com.zimingsir.cart.pojo.vo.CommodityVO">
+        select id, name, img_url, brand, price, shop_name from cart_commodity where is_effective = 1;
     </select>
 
-    <select id="getCommodityById" resultType="com.zimingsir.support.pojo.Commodity">
-        select id, name, img_url, brand, shop_name, price from cart_commodity where is_effective = 1 and id = #{id};
+    <select id="getCommodityById" resultType="com.zimingsir.cart.pojo.vo.CommodityVO">
+        select id, name, img_url, brand, price, shop_name from cart_commodity where is_effective = 1 and id = #{id};
     </select>
 </mapper>

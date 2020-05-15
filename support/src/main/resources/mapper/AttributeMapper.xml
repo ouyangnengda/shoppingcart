@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.zimingsir.support.dao.AttributeDAO">
+<mapper namespace="com.zimingsir.cart.dao.AttributeDAO">
 
-    <resultMap id="attributeList" type="com.zimingsir.support.pojo.Attribute">
+    <resultMap id="attributeList" type="com.zimingsir.cart.pojo.vo.AttributeVO">
         <result column="attribute_name" property="attributeName"/>
-        <collection property="values"  ofType="com.zimingsir.support.pojo.Value">
+        <collection property="values"  ofType="com.zimingsir.cart.pojo.vo.Value">
             <id column="id" property="id"/>
             <result column="name" property="name"/>
         </collection>

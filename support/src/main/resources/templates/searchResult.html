@@ -13,6 +13,9 @@
                 <div id="commodityBox" style="display: flex">
                     <img th:src="@{${commodity.imgUrl}}" height="400" alt="商品效果图" id="photo"/>
                     <div style="font-size: 30px">
+                        <div style="display: flex">店铺：
+                            <div th:text="${commodity.shopName}">店铺：</div>
+                        </div>
                         <div style="display: flex">品牌：
                             <div th:text="${commodity.brand}">品牌：</div>
                         </div>
