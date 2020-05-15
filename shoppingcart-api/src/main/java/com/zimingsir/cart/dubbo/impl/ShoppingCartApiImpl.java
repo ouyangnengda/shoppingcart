@@ -1,7 +1,9 @@
 package com.zimingsir.cart.dubbo.impl;
 
 import com.zimingsir.cart.dubbo.ShoppingCartApi;
+import com.zimingsir.cart.pojo.vo.CartVO;
 import com.zimingsir.cart.service.ShoppingCart;
+import java.util.List;
 import org.apache.dubbo.config.annotation.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -12,29 +14,22 @@ import org.springframework.beans.factory.annotation.Autowired;
  **/
 @Service
 public class ShoppingCartApiImpl implements ShoppingCartApi {
+
     @Autowired
     ShoppingCart cart;
 
     @Override
-    public String delete(Integer userId, String selectIndex) {
-        return cart.delete(userId, selectIndex);
+    public Integer delete(Integer userId, List<Integer> skuIds) {
+        return null;
     }
 
     @Override
-    public String insert(Integer userId, String selectIndex) {
-
-        return cart.insert(userId, selectIndex);
+    public List<Integer> insert(Integer userId, List<Integer> skuIds) {
+        return cart.insert(userId, skuIds);
     }
 
     @Override
-    public String update(Integer userId, String selectIndex) {
-
-        return cart.update(userId, selectIndex);
-    }
-
-    @Override
-    public String select(Integer userId, String selectIndex) {
-
-        return cart.select(userId, selectIndex);
+    public CartVO select(Integer userId) {
+        return null;
     }
 }

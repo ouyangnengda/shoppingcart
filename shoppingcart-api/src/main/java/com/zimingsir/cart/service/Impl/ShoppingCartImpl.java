@@ -1,6 +1,14 @@
 package com.zimingsir.cart.service.Impl;
 
+import com.sun.xml.internal.bind.v2.TODO;
+import com.zimingsir.cart.dao.CartDAO;
+import com.zimingsir.cart.dao.SkuDAO;
+import com.zimingsir.cart.pojo.entity.Cart;
 import com.zimingsir.cart.service.ShoppingCart;
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -11,30 +19,43 @@ import org.springframework.stereotype.Service;
 @Service
 public class ShoppingCartImpl implements ShoppingCart {
 
-    public String combin(String operation, String userId, String selectIndex) {
-        return operation + ":{" + userId + "+" + selectIndex + "}";
-    }
+    @Autowired
+    CartDAO cartDAO;
 
-
-    @Override
-    public String delete(Integer userId, String selectIndex) {
-        return combin("delete", userId.toString(), selectIndex);
-
-    }
+    @Autowired
+    SkuDAO skuDAO;
 
     @Override
-    public String insert(Integer userId, String selectIndex) {
-        return combin("insert", userId.toString(), selectIndex);
+    public List<Integer> insert(Integer userId, List<Integer> skuIds) {
+        List<Integer> result = new ArrayList<>(skuIds.size());
+        if (userId != null && userId > 0 && skuIds != null && skuIds.size() > 0) {
 
+        }
+        return null;
     }
 
-    @Override
-    public String update(Integer userId, String selectIndex) {
-        return combin("update", userId.toString(), selectIndex);
+    private Integer insertSku(Integer userId, Integer skuId) {
+        Integer id = cartDAO.getId(userId, skuId);
+        if (id != null && id > 0) {
+            cartDAO.addNumber(id);
+        } else {
+            // cart 表中插入一条记录
+            Cart cart = buildCart(userId, skuId);
+            // TODO
+            cartDAO.
+        }
+        return 0;
     }
 
-    @Override
-    public String select(Integer userId, String selectIndex) {
-        return combin("select", userId.toString(), selectIndex);
+    private Cart buildCart(Integer userId, Integer skuId) {
+        Cart cart = new Cart();
+        Integer commodityId = skuDAO.getCommodityId(skuId);
+        cart.setUserId(userId)
+                .setCommodityId(commodityId)
+                .setSkuId(skuId)
+                .setNumber(1)
+                .setCreateBy(userId)
+                .setCreateTime(LocalDateTime.now());
+        return cart;
     }
 }

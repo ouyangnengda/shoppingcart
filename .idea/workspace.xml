@@ -1,51 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/service/Impl/ShoppingCartImpl.java" line="44" mnemonic="1" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="0dbeaad6-ee24-4d0f-b8d8-38586af58aa1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/cart/pojo/vo/AttributeVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/cart/pojo/vo/CommodityVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/cart/pojo/vo/Value.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="0dbeaad6-ee24-4d0f-b8d8-38586af58aa1" name="Default Changelist" comment="商品搜索结果页面和商品详情页可以运行">
+      <change afterPath="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/dao/CartDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/dao/SkuDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/pojo/entity/Cart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/pojo/vo/CartVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoppingcart-api/src/main/resources/mapper/CartMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoppingcart-api/src/main/resources/mapper/SkuMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoppingcart-api/src/test/java/com/zimingsir/cart/dao/CartDAOTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/cart/controller/CartController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/cart/dao/SkuDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/cart/pojo/vo/CartVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/support/src/main/resources/mapper/SkuMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/support/src/main/resources/templates/cart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/support/src/test/java/com/zimingsir/cart/dao/SkuDAOTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/shoppingcartapi/ShoppingcartApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/ShoppingcartApiApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/shoppingcartapi/dubbo/ShoppingCartApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/dubbo/ShoppingCartApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/shoppingcartapi/dubbo/impl/ShoppingCartApiImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/dubbo/impl/ShoppingCartApiImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/shoppingcartapi/pojo/ShoppingcartOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/pojo/ShoppingcartOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/shoppingcartapi/service/Impl/ShoppingCartImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/service/Impl/ShoppingCartImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/shoppingcartapi/service/ShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/service/ShoppingCart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingcart-api/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingcart-api/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/Interceptor/TokenInterceptor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/SupportApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/cart/SupportApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/Util/VariableUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/controller/CommodityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/cart/controller/CommodityController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/controller/LoginController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/controller/ShoppingcartController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/dao/AttributeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/cart/dao/AttributeDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/dao/CommodityDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/cart/dao/CommodityDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/dao/TokenDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/dubbo/ShoppingCartApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/cart/dubbo/ShoppingCartApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/pojo/Attribute.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/pojo/Commodity.java" beforeDir="false" afterPath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/cart/pojo/dto/CommodityDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/pojo/Token.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/pojo/Value.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/service/CommodityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/cart/service/CommodityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/service/Impl/CommodityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/cart/service/Impl/CommodityServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/service/Impl/LocalCartServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/service/Impl/TokenServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/service/LocalCartService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/support/service/TokenService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/support/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/support/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/support/src/main/resources/mapper/AttributeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/support/src/main/resources/mapper/AttributeMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/support/src/main/resources/mapper/CommodityMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/support/src/main/resources/mapper/CommodityMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/support/src/main/resources/static/js/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/support/src/main/resources/templates/searchResult.html" beforeDir="false" afterPath="$PROJECT_DIR$/support/src/main/resources/templates/searchResult.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/support/src/test/java/com/zimingsir/support/SupportApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/support/src/test/java/com/zimingsir/support/SupportApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/support/src/test/java/com/zimingsir/support/controller/CommodityControllerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/support/src/test/java/com/zimingsir/support/dao/CommodityDAOTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/support/src/test/java/com/zimingsir/support/dubbo/ShoppingCartApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/support/src/test/java/com/zimingsir/support/dubbo/ShoppingCartApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/ShoppingcartApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/ShoppingcartApiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/dubbo/ShoppingCartApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/dubbo/ShoppingCartApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/dubbo/impl/ShoppingCartApiImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/dubbo/impl/ShoppingCartApiImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/pojo/ShoppingcartOperation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/service/Impl/ShoppingCartImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/service/Impl/ShoppingCartImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/service/ShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/service/ShoppingCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/cart/dubbo/ShoppingCartApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/support/src/main/java/com/zimingsir/cart/dubbo/ShoppingCartApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/support/src/main/resources/templates/commodity.html" beforeDir="false" afterPath="$PROJECT_DIR$/support/src/main/resources/templates/commodity.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/support/src/test/java/com/zimingsir/support/SupportApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/support/src/test/java/com/zimingsir/support/dubbo/ShoppingCartApiTest.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -92,13 +75,6 @@
         <item name="cart@39.98.113.163" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="cart: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="cart_commodity: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="cart@39.98.113.163" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="cart: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="cart_sku: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
@@ -107,69 +83,45 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="shoppingcart" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/support/src/main/resources/templates/commodity.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/support/src/main/resources/templates/searchResult.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="94" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/support/src/main/java/com/zimingsir/cart/pojo/vo/AttributeVO.java">
+        <entry file="file://$PROJECT_DIR$/shoppingcart-api/src/main/resources/mapper/CartMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/support/src/main/java/com/zimingsir/cart/pojo/vo/Value.java">
+        <entry file="file://$PROJECT_DIR$/shoppingcart-api/src/main/resources/mapper/SkuMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+            <state relative-caret-position="68">
+              <caret line="4" column="60" lean-forward="true" selection-start-line="4" selection-start-column="60" selection-end-line="4" selection-end-column="60" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/support/src/main/java/com/zimingsir/cart/pojo/vo/CommodityVO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+        <entry file="das://2def18d2-921b-4d3b-bc3b-b05782b0ffde/schema/cart/table/cart_sku">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true">
+                <filter text="" />
+              </filtering>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/support/src/main/java/com/zimingsir/cart/controller/CommodityController.java">
+        <entry file="file://$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/service/Impl/ShoppingCartImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="45" column="5" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+            <state relative-caret-position="199">
+              <caret line="44" column="20" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -178,10 +130,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/support/src/main/resources/mapper/AttributeMapper.xml">
+        <entry file="file://$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/dao/SkuDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+            <state relative-caret-position="187">
+              <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/pojo/entity/Cart.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="131">
+              <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -191,9 +155,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
+        <option value="HTML File" />
         <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="Interface" />
+        <option value="Mapper xml" />
       </list>
     </option>
   </component>
@@ -208,14 +174,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/support/src/test/java/com/zimingsir/support/dao/CommodityDAOTest.java" />
-        <option value="$PROJECT_DIR$/support/src/main/resources/log4j2.properties" />
-        <option value="$PROJECT_DIR$/support/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/shoppingcart-api/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/shoppingcartapi/dubbo/ShoppingcartDubbo.java" />
-        <option value="$PROJECT_DIR$/shoppingcart-api/src/main/resources/log4j2.properties" />
-        <option value="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/shoppingcartapi/service/Shoppingcart.java" />
         <option value="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/shoppingcartapi/dubbo/ShoppingCartApi.java" />
         <option value="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/shoppingcartapi/service/Impl/ShoppingcartImpl.java" />
         <option value="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/shoppingcartapi/dubbo/impl/ShoppingCartApiImpl.java" />
@@ -231,7 +189,6 @@
         <option value="$PROJECT_DIR$/shoppingcart-api/src/main/resources/application-dev.yml" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/2def18d2-921b-4d3b-bc3b-b05782b0ffde/console.sql" />
         <option value="$PROJECT_DIR$/support/src/main/java/com/zimingsir/cart/pojo/dto/Commodity.java" />
-        <option value="$PROJECT_DIR$/support/src/main/java/com/zimingsir/cart/pojo/vo/Value.java" />
         <option value="$PROJECT_DIR$/support/src/main/java/com/zimingsir/cart/pojo/vo/Commodity.java" />
         <option value="$PROJECT_DIR$/support/src/main/java/com/zimingsir/cart/pojo/vo/Attribute.java" />
         <option value="$PROJECT_DIR$/support/src/main/java/com/zimingsir/cart/dao/AttributeDAO.java" />
@@ -239,16 +196,35 @@
         <option value="$PROJECT_DIR$/support/src/main/java/com/zimingsir/cart/service/Impl/CommodityServiceImpl.java" />
         <option value="$PROJECT_DIR$/support/src/main/java/com/zimingsir/cart/dao/CommodityDAO.java" />
         <option value="$PROJECT_DIR$/support/src/main/java/com/zimingsir/cart/controller/ShoppingcartController.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/support/src/test/java/com/zimingsir/support/SupportApplicationTests.java" />
         <option value="$PROJECT_DIR$/support/src/test/java/com/zimingsir/support/dao/CommodityVODAOTest.java" />
         <option value="$PROJECT_DIR$/support/src/main/resources/mapper/CommodityMapper.xml" />
-        <option value="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/service/Impl/ShoppingCartImpl.java" />
         <option value="$PROJECT_DIR$/support/src/main/resources/templates/searchResult.html" />
-        <option value="$PROJECT_DIR$/support/src/main/resources/mapper/AttributeMapper.xml" />
         <option value="$PROJECT_DIR$/support/src/main/java/com/zimingsir/cart/pojo/vo/CommodityVO.java" />
         <option value="$PROJECT_DIR$/support/src/main/java/com/zimingsir/cart/controller/CommodityController.java" />
+        <option value="$PROJECT_DIR$/support/src/main/java/com/zimingsir/cart/pojo/vo/Value.java" />
+        <option value="$PROJECT_DIR$/support/src/main/resources/mapper/AttributeMapper.xml" />
+        <option value="$PROJECT_DIR$/support/src/main/resources/templates/cart.html" />
         <option value="$PROJECT_DIR$/support/src/main/resources/templates/commodity.html" />
+        <option value="$PROJECT_DIR$/support/src/main/java/com/zimingsir/cart/dao/SkuDAO.java" />
+        <option value="$PROJECT_DIR$/support/src/test/java/com/zimingsir/cart/dao/SkuDAOTest.java" />
+        <option value="$PROJECT_DIR$/support/src/main/resources/mapper/SkuMapper.xml" />
+        <option value="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/pojo/vo/CartVO.java" />
+        <option value="$PROJECT_DIR$/support/src/main/java/com/zimingsir/cart/pojo/vo/CartVO.java" />
+        <option value="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/dubbo/ShoppingCartApi.java" />
+        <option value="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/service/ShoppingCart.java" />
+        <option value="$PROJECT_DIR$/support/src/main/java/com/zimingsir/cart/dubbo/ShoppingCartApi.java" />
+        <option value="$PROJECT_DIR$/support/src/main/java/com/zimingsir/cart/controller/CartController.java" />
+        <option value="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/dubbo/impl/ShoppingCartApiImpl.java" />
+        <option value="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/ShoppingcartApiApplication.java" />
+        <option value="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/dao/CartDAO.java" />
+        <option value="$PROJECT_DIR$/shoppingcart-api/src/main/resources/mapper/CartMapper.xml" />
+        <option value="$PROJECT_DIR$/shoppingcart-api/src/test/java/com/zimingsir/cart/dao/CartDAOTest.java" />
+        <option value="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/pojo/entity/Cart.java" />
+        <option value="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/dao/SkuDAO.java" />
+        <option value="$PROJECT_DIR$/shoppingcart-api/src/main/resources/mapper/SkuMapper.xml" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/service/Impl/ShoppingCartImpl.java" />
       </list>
     </option>
   </component>
@@ -325,6 +301,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cart" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shoppingcart" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shoppingcart" type="462c0819:PsiDirectoryNode" />
+              <item name="shoppingcart-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cart" type="462c0819:PsiDirectoryNode" />
               <item name="dubbo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -337,6 +323,16 @@
               <item name="cart" type="462c0819:PsiDirectoryNode" />
               <item name="dubbo" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shoppingcart" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shoppingcart" type="462c0819:PsiDirectoryNode" />
+              <item name="shoppingcart-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cart" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shoppingcart" type="b2602c69:ProjectViewProjectNode" />
@@ -366,6 +362,49 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shoppingcart" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shoppingcart" type="462c0819:PsiDirectoryNode" />
+              <item name="shoppingcart-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shoppingcart" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shoppingcart" type="462c0819:PsiDirectoryNode" />
+              <item name="shoppingcart-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shoppingcart" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shoppingcart" type="462c0819:PsiDirectoryNode" />
+              <item name="shoppingcart-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shoppingcart" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shoppingcart" type="462c0819:PsiDirectoryNode" />
+              <item name="shoppingcart-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zimingsir" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shoppingcart" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shoppingcart" type="462c0819:PsiDirectoryNode" />
+              <item name="shoppingcart-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zimingsir" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shoppingcart" type="b2602c69:ProjectViewProjectNode" />
@@ -411,6 +450,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cart" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shoppingcart" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shoppingcart" type="462c0819:PsiDirectoryNode" />
+              <item name="support" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cart" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shoppingcart" type="b2602c69:ProjectViewProjectNode" />
@@ -491,17 +540,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="support" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shoppingcart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shoppingcart" type="462c0819:PsiDirectoryNode" />
-              <item name="support" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="support" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -511,11 +550,13 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
@@ -531,13 +572,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.zimingsir.cart.dao" />
+      <recent name="com.zimingsir.support.dubbo" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.zimingsir.support.dubbo" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.zimingsir.support.dubbo" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.zimingsir.shoppingcartapi.dubbo.impl" />
@@ -560,34 +602,50 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SupportApplication (1)">
-    <configuration name="CommodityVODAOTest.getCommodityById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="support" />
+  <component name="RunManager" selected="JUnit.CartDAOTest.addNumber">
+    <configuration name="CartDAOTest.addNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shoppingcart-api" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zimingsir.support.dao.*" />
+          <option name="PATTERN" value="com.zimingsir.cart.dao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.zimingsir.support.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.zimingsir.support.dao.CommodityVODAOTest" />
-      <option name="METHOD_NAME" value="getCommodityById" />
+      <option name="PACKAGE_NAME" value="com.zimingsir.cart.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.zimingsir.cart.dao.CartDAOTest" />
+      <option name="METHOD_NAME" value="addNumber" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShoppingCartApiTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="support" />
+    <configuration name="CartDAOTest.getId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shoppingcart-api" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zimingsir.support.dubbo.*" />
+          <option name="PATTERN" value="com.zimingsir.cart.dao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.zimingsir.support.dubbo" />
-      <option name="MAIN_CLASS_NAME" value="com.zimingsir.support.dubbo.ShoppingCartApiTest" />
-      <option name="METHOD_NAME" value="delete" />
+      <option name="PACKAGE_NAME" value="com.zimingsir.cart.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.zimingsir.cart.dao.CartDAOTest" />
+      <option name="METHOD_NAME" value="getId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SkuDAOTest.getSkuIdBySelectIndex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="support" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zimingsir.cart.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zimingsir.cart.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.zimingsir.cart.dao.SkuDAOTest" />
+      <option name="METHOD_NAME" value="getSkuIdBySelectIndex" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -635,11 +693,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.SupportApplication (1)" />
+        <item itemvalue="JUnit.CartDAOTest.addNumber" />
+        <item itemvalue="JUnit.CartDAOTest.getId" />
         <item itemvalue="Spring Boot.ShoppingcartApiApplication (1)" />
-        <item itemvalue="JUnit.ShoppingCartApiTest.delete" />
-        <item itemvalue="JUnit.CommodityVODAOTest.getCommodityById" />
-        <item itemvalue="JUnit.CommodityVODAOTest.getCommodityById" />
+        <item itemvalue="JUnit.SkuDAOTest.getSkuIdBySelectIndex" />
+        <item itemvalue="Spring Boot.SupportApplication (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -656,38 +714,52 @@
       <workItem from="1588947332252" duration="211000" />
       <workItem from="1588992523075" duration="54000" />
       <workItem from="1589006428021" duration="2767000" />
-      <workItem from="1589522496581" duration="5049000" />
+      <workItem from="1589522496581" duration="11711000" />
     </task>
+    <task id="LOCAL-00001" summary="商品搜索结果页面和商品详情页可以运行">
+      <created>1589527892943</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1589527892943</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CommodityDAOTest_getCommodityById - 2020.05.09 at 15h 03m 09s.xml">
-      <configuration name="CommodityDAOTest.getCommodityById" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CommodityDAOTest_getCommodityById - 2020.05.09 at 15h 09m 54s.xml">
-      <configuration name="CommodityDAOTest.getCommodityById" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CommodityDAOTest_getCommodityById - 2020.05.09 at 15h 12m 47s.xml">
-      <configuration name="CommodityDAOTest.getCommodityById" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CommodityDAOTest_getCommodityById - 2020.05.09 at 15h 15m 50s.xml">
-      <configuration name="CommodityDAOTest.getCommodityById" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CommodityDAOTest_getCommodityById - 2020.05.09 at 15h 16m 47s.xml">
-      <configuration name="CommodityDAOTest.getCommodityById" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CommodityDAOTest_getCommodityById - 2020.05.09 at 15h 17m 51s.xml">
-      <configuration name="CommodityDAOTest.getCommodityById" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CommodityDAOTest_getCommodityById - 2020.05.09 at 15h 18m 43s.xml">
       <configuration name="CommodityDAOTest.getCommodityById" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ShoppingCartApiTest_delete - 2020.05.09 at 21h 12m 51s.xml">
       <configuration name="ShoppingCartApiTest.delete" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SkuDAOTest_getSkuIdBySelectIndex - 2020.05.15 at 15h 56m 39s.xml">
+      <configuration name="SkuDAOTest.getSkuIdBySelectIndex" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SkuDAOTest_getSkuIdBySelectIndex - 2020.05.15 at 15h 58m 48s.xml">
+      <configuration name="SkuDAOTest.getSkuIdBySelectIndex" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CartDAOTest_getId - 2020.05.15 at 16h 41m 46s.xml">
+      <configuration name="CartDAOTest.getId" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CartDAOTest_getId - 2020.05.15 at 16h 43m 06s.xml">
+      <configuration name="CartDAOTest.getId" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CartDAOTest_getId - 2020.05.15 at 16h 45m 05s.xml">
+      <configuration name="CartDAOTest.getId" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CartDAOTest_getId - 2020.05.15 at 16h 48m 41s.xml">
+      <configuration name="CartDAOTest.getId" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CartDAOTest_getId - 2020.05.15 at 16h 50m 43s.xml">
+      <configuration name="CartDAOTest.getId" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CartDAOTest_addNumber - 2020.05.15 at 17h 01m 54s.xml">
+      <configuration name="CartDAOTest.addNumber" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14476000" />
+    <option name="totallyTimeSpent" value="21138000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -700,25 +772,26 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.46616542" visible="true" weight="0.24963397" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Favorites" order="6" sideWeight="0.5338346" side_tool="true" weight="0.24963397" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3281027" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4517611" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4507846" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32952926" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
       <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32952926" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="SonarLint" order="12" />
@@ -728,7 +801,7 @@
       <window_info anchor="bottom" id="Messages" order="16" weight="0.32952926" />
       <window_info anchor="bottom" id="Database Console" order="17" weight="0.3281027" />
       <window_info anchor="bottom" id="JProfiler" order="18" />
-      <window_info active="true" anchor="bottom" id="Run Dashboard" order="19" visible="true" weight="0.36804566" />
+      <window_info anchor="bottom" id="Run Dashboard" order="19" weight="0.810271" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -736,7 +809,7 @@
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Word Book" order="6" side_tool="true" />
-      <window_info anchor="right" id="Database" order="7" visible="true" weight="0.18594436" />
+      <window_info active="true" anchor="right" id="Database" order="7" visible="true" weight="0.18594436" />
       <window_info anchor="right" id="SciView" order="8" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info anchor="right" id="Theme Preview" order="10" />
@@ -749,88 +822,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="support模块大致完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="support模块大致完成" />
+    <MESSAGE value="商品搜索结果页面和商品详情页可以运行" />
+    <option name="LAST_COMMIT_MESSAGE" value="商品搜索结果页面和商品详情页可以运行" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8779e503-8990-403e-ba49-76979f860d64/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://8779e503-8990-403e-ba49-76979f860d64/schema/cart/table/cart_commodity" />
-    <entry file="file://$PROJECT_DIR$/support/src/main/resources/application-pro.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/shoppingcartapi/dubbo/ShoppingcartDubbo.java" />
-    <entry file="file://$PROJECT_DIR$/support/src/main/resources/log4j2.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shoppingcart-api/src/main/resources/application-pro.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/pojo/ShoppingcartOperation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/support/src/main/java/com/zimingsir/cart/dubbo/ShoppingCartApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="15" lean-forward="true" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shoppingcart-api/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shoppingcart-api/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/support/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/support/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/support/src/main/resources/application-dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shoppingcart-api/src/main/resources/log4j2.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://2def18d2-921b-4d3b-bc3b-b05782b0ffde/schema/cart/table/cart_cart">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true">
-            <filter text="" />
-          </filtering>
         </state>
       </provider>
     </entry>
@@ -959,15 +958,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://2def18d2-921b-4d3b-bc3b-b05782b0ffde/schema/cart/table/cart_sku">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true">
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://2def18d2-921b-4d3b-bc3b-b05782b0ffde/schema/cart/table/cart_commodity">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -981,54 +971,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/dubbo/ShoppingCartApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/dubbo/impl/ShoppingCartApiImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shoppingcart-api/src/main/resources/application-dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/service/Impl/ShoppingCartImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-187">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/service/ShoppingCart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/ShoppingcartApiApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1049,30 +991,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/support/src/main/resources/mapper/AttributeMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/support/src/main/java/com/zimingsir/cart/pojo/vo/AttributeVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/support/src/main/java/com/zimingsir/cart/pojo/vo/Value.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/support/src/main/java/com/zimingsir/cart/pojo/vo/CommodityVO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1083,17 +1001,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/support/src/main/resources/templates/searchResult.html">
+    <entry file="file://$PROJECT_DIR$/support/src/main/java/com/zimingsir/cart/pojo/vo/Value.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="94" />
+        <state relative-caret-position="187">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/support/src/main/resources/templates/commodity.html">
+    <entry file="file://$PROJECT_DIR$/support/src/main/resources/mapper/AttributeMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        <state relative-caret-position="272">
+          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/support/src/main/resources/templates/searchResult.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/support/src/main/resources/templates/cart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1102,10 +1034,223 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/support/src/main/resources/templates/commodity.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="41" column="41" lean-forward="true" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/support/src/main/java/com/zimingsir/cart/pojo/vo/AttributeVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/support/src/main/java/com/zimingsir/cart/controller/CommodityController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="45" column="5" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+        <state relative-caret-position="219">
+          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/support/src/main/java/com/zimingsir/cart/dao/SkuDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/support/src/main/resources/mapper/SkuMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/support/src/test/java/com/zimingsir/cart/dao/SkuDAOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="18" column="69" selection-start-line="18" selection-start-column="69" selection-end-line="18" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/pojo/vo/CartVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/support/src/main/java/com/zimingsir/cart/pojo/vo/CartVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/service/ShoppingCart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/support/src/main/java/com/zimingsir/cart/dubbo/ShoppingCartApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/support/src/main/java/com/zimingsir/cart/controller/CartController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="44" column="7" lean-forward="true" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shoppingcart-api/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/dubbo/ShoppingCartApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/ShoppingcartApiApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/dao/CartDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shoppingcart-api/src/test/java/com/zimingsir/cart/dao/CartDAOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="25" column="50" lean-forward="true" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/dubbo/impl/ShoppingCartApiImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/pojo/entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/pojo/entity/Cart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/dao/SkuDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shoppingcart-api/src/main/resources/mapper/CartMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shoppingcart-api/src/main/resources/mapper/SkuMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="60" lean-forward="true" selection-start-line="4" selection-start-column="60" selection-end-line="4" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2def18d2-921b-4d3b-bc3b-b05782b0ffde/schema/cart/table/cart_cart">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true">
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2def18d2-921b-4d3b-bc3b-b05782b0ffde/schema/cart/table/cart_sku">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true">
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shoppingcart-api/src/main/java/com/zimingsir/cart/service/Impl/ShoppingCartImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="44" column="20" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
