@@ -2,9 +2,43 @@
 <!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.zimingsir.cart.dao.CartDAO">
     <select id="getId" resultType="Integer">
-        select id from cart_cart where user_id=#{userId} and sku_id=#{skuId};
+        select id
+        from cart_cart
+        where user_id = #{userId}
+          and sku_id = #{skuId};
     </select>
-    <update id="addNumber">
-        update cart_cart set number=number+1 where id=#{id}
+    <update id="incrNumber">
+        update cart_cart
+        set number=number + 1
+        where id = #{id}
     </update>
+
+    <insert id="insert">
+        insert into cart_cart(user_id, commodity_id, sku_id, number, create_by, create_time)
+        values (#{userId}, #{commodityId}, #{skuId}, #{number}, #{createBy}, #{createTime});
+
+    </insert>
+
+    <select id="getNumber" resultType="Integer">
+        select number
+        from cart_cart
+        where sku_id = #{skuId};
+    </select>
+
+    <update id="lock">
+        update cart_cart
+        set revision=revision + 1
+        where revision = 0
+          and id = #{id};
+    </update>
+
+    <update id="unlock">
+        update cart_cart
+        set revision=revision-1
+        where revision != 0 and revision=#{lock} and id=#{id};
+    </update>
+
+    <select id="get" resultMap="com.zimingsir.cart.pojo.entity.Cart">
+        select id, user_id, commodity_id, sku_id, number, revision, create_by, create_time, update_by, update_time, is_effective from cart_cart where id = #{id};
+    </select>
 </mapper>

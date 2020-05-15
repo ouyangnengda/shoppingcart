@@ -23,6 +23,14 @@ public class ShoppingCartApiImpl implements ShoppingCartApi {
         return null;
     }
 
+    /**
+     * @Method：insert
+     * @Description: 将所有sku插入到用户的购物车中。插入失败的sku将被返回
+     * @param userId
+     * @param skuIds
+     * @return: java.util.List<java.lang.Integer>
+     * @Date: 2020/5/15 20:30
+     */
     @Override
     public List<Integer> insert(Integer userId, List<Integer> skuIds) {
         return cart.insert(userId, skuIds);

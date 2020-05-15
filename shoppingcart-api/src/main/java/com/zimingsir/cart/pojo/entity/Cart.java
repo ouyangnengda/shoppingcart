@@ -22,4 +22,5 @@ public class Cart {
     private LocalDateTime createTime;
     private Integer updateBy;
     private Integer updateTime;
+    private Integer isEffective;
 }

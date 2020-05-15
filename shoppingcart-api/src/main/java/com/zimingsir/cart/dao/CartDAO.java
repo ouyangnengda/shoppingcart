@@ -1,5 +1,6 @@
 package com.zimingsir.cart.dao;
 
+import com.zimingsir.cart.pojo.entity.Cart;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
@@ -10,6 +11,18 @@ import org.springframework.stereotype.Repository;
  **/
 @Repository
 public interface CartDAO {
+    void lock(Integer id);
+
     Integer getId(@Param("userId") Integer userId, @Param("skuId") Integer skuId);
-    Integer addNumber(@Param("id")Integer id);
+
+    void incrNumber(@Param("id") Integer id);
+
+    void insert(Cart cart);
+
+    Integer getNumber(Integer skuId);
+
+    void unlock(Integer id, Integer lock);
+
+    Cart get(Integer id);
 }
+
