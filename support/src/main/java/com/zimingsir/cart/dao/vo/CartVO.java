@@ -1,4 +1,4 @@
-package com.zimingsir.cart.pojo.vo;
+package com.zimingsir.cart.dao.vo;
 
 import java.io.Serializable;
 import java.util.List;

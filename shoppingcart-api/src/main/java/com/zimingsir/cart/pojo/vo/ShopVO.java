@@ -7,9 +7,11 @@ import lombok.Data;
 /**
  * @Description:
  * @Author: 欧阳能达
- * @Created: 2020年05月15日 16:06:00
+ * @Created: 2020年05月16日 08:50:00
  **/
 @Data
-public class CartVO implements Serializable {
-    List<ShopVO> shopVOs;
+public class ShopVO implements Serializable {
+    private String shopName;
+    List<SkuVO> skuVOs;
+
 }

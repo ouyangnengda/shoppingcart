@@ -79,6 +79,13 @@
             </exclusions>
         </dependency>
 
+        <!--添加测试Assert-->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+
         <!--日志框架-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -95,6 +102,14 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
+
+        <!-- json序列化框架-->
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20180130</version>
+        </dependency>
+
     </dependencies>
 
     <build>

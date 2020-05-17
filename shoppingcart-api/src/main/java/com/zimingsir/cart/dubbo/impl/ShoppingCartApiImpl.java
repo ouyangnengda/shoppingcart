@@ -38,6 +38,6 @@ public class ShoppingCartApiImpl implements ShoppingCartApi {
 
     @Override
     public CartVO select(Integer userId) {
-        return null;
+        return cart.select(userId);
     }
 }

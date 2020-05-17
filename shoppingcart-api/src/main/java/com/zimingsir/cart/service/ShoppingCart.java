@@ -1,5 +1,6 @@
 package com.zimingsir.cart.service;
 
+import com.zimingsir.cart.pojo.vo.CartVO;
 import java.util.List;
 
 /**
@@ -10,4 +11,5 @@ import java.util.List;
 public interface ShoppingCart {
     List<Integer> insert(Integer userId, List<Integer> skuIds);
 
+    CartVO select(Integer userId);
 }

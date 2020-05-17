@@ -9,7 +9,7 @@ import java.util.List;
  * @Created: 2020年05月09日 20:45:00
  **/
 public interface ShoppingCartApi {
-    Integer delete(Integer userId, List<Integer> skuIds);
+    // Integer delete(Integer userId, List<Integer> skuIds);
     List<Integer> insert(Integer userId, List<Integer> skuIds);
     // String update(Integer userId, String selectIndex);
     CartVO select(Integer userId);

@@ -52,12 +52,6 @@ public class CommodityController {
         return "";
     }
 
-    @RequestMapping("/test")
-    @ResponseBody
-    public String test() {
-        return cart.select(1, "1_3_5");
-    }
-
     @GetMapping("/showCommodity")
     public String showCommodity(Model model) {
         List<CommodityVO> commodities = commodityDAO.getAllCommodity();

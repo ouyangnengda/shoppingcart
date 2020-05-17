@@ -4,8 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/shoppingcart.iml" filepath="$PROJECT_DIR$/shoppingcart.iml" />
       <module fileurl="file://$PROJECT_DIR$/shoppingcart-api/shoppingcart-api.iml" filepath="$PROJECT_DIR$/shoppingcart-api/shoppingcart-api.iml" />
-      <module fileurl="file://$PROJECT_DIR$/shoppingcart-api/shoppingcart-api.iml" filepath="$PROJECT_DIR$/shoppingcart-api/shoppingcart-api.iml" />
-      <module fileurl="file://$PROJECT_DIR$/support/support.iml" filepath="$PROJECT_DIR$/support/support.iml" />
       <module fileurl="file://$PROJECT_DIR$/support/support.iml" filepath="$PROJECT_DIR$/support/support.iml" />
     </modules>
   </component>

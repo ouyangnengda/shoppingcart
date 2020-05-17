@@ -1,15 +1,18 @@
 package com.zimingsir.cart.dao;
 
+import com.zimingsir.cart.BaseTest;
 import com.zimingsir.cart.pojo.entity.Cart;
+import com.zimingsir.cart.pojo.vo.ShopVO;
+import com.zimingsir.cart.pojo.vo.SkuVO;
 import java.time.LocalDateTime;
+import java.util.List;
 import lombok.extern.slf4j.Slf4j;
+import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
 @Slf4j
-class CartDAOTest {
+class CartDAOTest extends BaseTest {
 
     @Autowired
     CartDAO cartDAO;
@@ -39,12 +42,31 @@ class CartDAOTest {
 
     @Test
     void lock() {
-        log.info(cartDAO.lock(2).toString());
-        log.info(cartDAO.get(2).toString());
-        log.info(cartDAO.lock(2).toString());
-        log.info(cartDAO.get(2).toString());
-        log.info(cartDAO.unlock(2, 1).toString());
-        log.info(cartDAO.get(2).toString());
+        cartDAO.lock(2);
+        Assert.assertEquals("乐观锁 lock 之后 revision 没有加一", Integer.valueOf(1), cartDAO.get(2).getRevision());
+        cartDAO.lock(2);
+        Assert.assertEquals("乐观锁两次 lock 之后 revision 没有等于1",Integer.valueOf(1),cartDAO.get(2).getRevision());
+        cartDAO.unlock(2, 1);
+        Assert.assertEquals("乐观锁 unlock 之后 revision 没有加一",Integer.valueOf(0),cartDAO.get(2).getRevision());
 
     }
+
+    @Test
+    void getValue() {
+        List<String> values = cartDAO.getValue("1_4_6_8");
+        Assert.assertNotNull(values);
+    }
+
+    @Test
+    void getByUserId() {
+        Assert.assertNotNull(cartDAO.getByUserId(1));
+        for (ShopVO s : cartDAO.getByUserId(1)) {
+            log.info(s.getShopName());
+            for (SkuVO sku : s.getSkuVOs()) {
+                log.info(sku.toString());
+            }
+            log.info("============== 商品分割线 ==================");
+        }
+    }
+
 }

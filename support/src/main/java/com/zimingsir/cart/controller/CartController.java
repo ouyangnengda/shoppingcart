@@ -25,7 +25,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class CartController {
 
     @Reference
-    ShoppingCartApi cart;
+    private ShoppingCartApi cart;
 
     @Autowired
     SkuDAO skuDAO;

@@ -5,36 +5,38 @@
     <title>Title</title>
 </head>
 <body>
-<div id="commodityBox" style="display: flex">
-    <img th:src="@{${commodity.imgUrl}}" height="400" alt="商品效果图" id="photo"/>
-    <div style="font-size: 30px">
-        <div style="display: flex">品牌：
-            <div th:text="${commodity.brand}">品牌：</div>
-        </div>
-        <div style="display: flex">商品名称:
-            <div th:text="${commodity.name}">商品名称：</div>
-        </div>
-        <div style="display: flex">商品价格:
-            <div th:text="${commodity.price}">商品价格：</div>
-        </div>
-        <div>
-            <table>
-                <tr th:each="attribute : ${attributes}">
-                    <td>
-                        <div style="display: flex">
-                            <div th:text="${attribute.attributeName} + ':    '" style="display: inline"></div>
+<table>
+    <tr th:each="shop : ${cartVO.shopVOs}">
+        <div th:text="${shop.shopName}">店铺名称</div>
+        <table>
+            <tr th:each="sku : ${skuVOs}">
+                <div id="commodityBox" style="display: flex">
+                    <img th:src="@{${sku.imgUrl}}" height="400" alt="商品效果图" id="photo"/>
+                    <div style="font-size: 30px">
+
+                        <div style="display: flex">商品名称:
+                            <div th:text="${sku.commodityName}">商品名称：</div>
+                        </div>
+                        <div style="display: flex">商品价格:
+                            <div th:text="${sku.price}">商品价格：</div>
+                        </div>
+                        <div style="display: flex">数量:
+                            <div th:text="${sku.number}">数量：</div>
+                        </div>
+                        <div>
                             <table>
-                                <tr th:each="value : ${attribute.values}">
-                                    <div th:text="'[' + ${value.name} + ' : ' +${value.id} + ']'"></div>
+                                <tr th:each="value : ${sku.values}">
+
+                                    <div th:text="${value} + '+'"></div>
+
                                 </tr>
                             </table>
                         </div>
-                    </td>
-                </tr>
-            </table>
-        </div>
-
-    </div>
-</div>
+                    </div>
+                </div>
+            </tr>
+        </table>
+    </tr>
+</table>
 </body>
 </html>
