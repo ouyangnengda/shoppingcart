@@ -10,8 +10,10 @@ import lombok.extern.slf4j.Slf4j;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
 
 @Slf4j
+@Transactional
 class CartDAOTest extends BaseTest {
 
     @Autowired
@@ -20,7 +22,9 @@ class CartDAOTest extends BaseTest {
     @Test
     void getId() {
         Integer id = cartDAO.getId(1, 1);
+
         log.info(id.toString());
+
     }
 
     @Test

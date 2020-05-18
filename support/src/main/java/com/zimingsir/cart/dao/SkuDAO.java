@@ -9,5 +9,5 @@ import org.springframework.stereotype.Repository;
  **/
 @Repository
 public interface SkuDAO {
-    Integer getSkuIdBySelectIndex(String selectIndex);
+    Integer getId(String selectIndex);
 }

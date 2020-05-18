@@ -103,7 +103,7 @@
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
 
-        <!-- json序列化框架-->
+        <!-- Gson序列化框架-->
         <dependency>
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>

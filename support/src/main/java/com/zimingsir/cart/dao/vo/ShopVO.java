@@ -10,7 +10,7 @@ import lombok.Data;
  * @Created: 2020年05月16日 08:50:00
  **/
 @Data
-class ShopVO implements Serializable {
+public class ShopVO implements Serializable {
     private String shopName;
     List<SkuVO> skuVOs;
 

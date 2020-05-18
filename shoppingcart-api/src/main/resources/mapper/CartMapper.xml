@@ -34,50 +34,64 @@
 
     <update id="unlock">
         update cart_cart
-        set revision=revision-1
-        where revision != 0 and revision=#{lock} and id=#{id};
+        set revision=revision - 1
+        where revision != 0
+          and revision = #{lock}
+          and id = #{id};
     </update>
 
     <select id="get" resultType="com.zimingsir.cart.pojo.entity.Cart">
-        select id, user_id, commodity_id, sku_id, number, revision, create_by, create_time, update_by, update_time, is_effective from cart_cart where id = #{id};
+        select id,
+               user_id,
+               commodity_id,
+               sku_id,
+               number,
+               revision,
+               create_by,
+               create_time,
+               update_by,
+               update_time,
+               is_effective
+        from cart_cart
+        where id = #{id};
     </select>
 
     <!--TODO 注意下面这一大段语句-->
-        <resultMap id="ShopVOs" type="com.zimingsir.cart.pojo.vo.ShopVO">
-            <id property="shopName" column="shop_name"/>
-            <collection property="skuVOs" javaType="ArrayList" ofType="com.zimingsir.cart.pojo.vo.SkuVO">
-                <id property="id" column="sku_id"/>
-                <result property="commodityName" column="commodityName"/>
-                <result property="imgUrl" column="img_url"/>
-                <result property="number" column="number"/>
-                <result property="price" column="price"/>
-                <collection property="values" javaType="ArrayList" column="attributeIndex" ofType="String" select="getValue">
-                    <result column="name"/>
-                </collection>
+    <resultMap id="ShopVOs" type="com.zimingsir.cart.pojo.vo.ShopVO">
+        <id property="shopName" column="shop_name"/>
+        <collection property="skuVOs" javaType="ArrayList" ofType="com.zimingsir.cart.pojo.vo.SkuVO">
+            <id property="id" column="sku_id"/>
+            <result property="commodityName" column="commodityName"/>
+            <result property="imgUrl" column="img_url"/>
+            <result property="number" column="number"/>
+            <result property="price" column="price"/>
+            <collection property="values" javaType="ArrayList" column="attributeIndex" ofType="String"
+                        select="getValue">
+                <result column="name"/>
             </collection>
-        </resultMap>
+        </collection>
+    </resultMap>
 
     <select id="getByUserId" resultMap="ShopVOs">
-        select
-            cart.sku_id,
-            cart.number,
-            commodity.shop_name,
-            commodity.name as commodityName,
-            commodity.img_url,
-            sku.attribute_index as attributeIndex,
-            sku.price
-        from    cart_cart cart
-                left outer join cart_commodity commodity on cart.commodity_id=commodity.id
-                left outer join cart_sku sku on cart.sku_id=sku.id
-        where cart.user_id=#{userId};
+        select cart.sku_id,
+               cart.number,
+               commodity.shop_name,
+               commodity.name      as commodityName,
+               commodity.img_url,
+               sku.value_index as attributeIndex,
+               sku.price
+        from cart_cart cart
+                 left outer join cart_commodity commodity on cart.commodity_id = commodity.id
+                 left outer join cart_sku sku on cart.sku_id = sku.id
+        where cart.user_id = #{userId};
     </select>
 
-    <select id="getValue" parameterType="String"  resultType="String">
+    <select id="getValue" parameterType="String" resultType="String">
         select name from cart_value where id in (
-            <foreach collection="attributeIndex.split('_')" item="item" separator=",">
-                #{item}
-            </foreach>
+        <foreach collection="attributeIndex.split('_')" item="item" separator=",">
+            #{item}
+        </foreach>
 
-            )
+        )
     </select>
 </mapper>

@@ -42,7 +42,7 @@
       <option name="IGNORE_JAVADOC_PERIOD" value="true" />
       <option name="IGNORE_DUPLICATED_THROWS" value="false" />
       <option name="IGNORE_POINT_TO_ITSELF" value="false" />
-      <option name="myAdditionalJavadocTags" value="Created:,Author:,Description:,Method：insertSku,return:,Date:,Method：insert" />
+      <option name="myAdditionalJavadocTags" value="Created:,Author:,Description:,Method：insertSku,return:,Date:,Method：insert,Method：select,Method：add,Method：delete" />
     </inspection_tool>
   </profile>
 </component>
