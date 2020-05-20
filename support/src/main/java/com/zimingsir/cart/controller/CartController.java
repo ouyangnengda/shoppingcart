@@ -1,16 +1,16 @@
 package com.zimingsir.cart.controller;
 
+import com.sun.xml.internal.bind.v2.TODO;
 import com.zimingsir.cart.dao.vo.ShopVO;
 import com.zimingsir.cart.dubbo.ShoppingCartApi;
+import com.zimingsir.cart.pojo.dto.CartDTO;
 import com.zimingsir.cart.service.CartService;
 import java.util.List;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @Description:
@@ -45,7 +45,7 @@ public class CartController {
 
         boolean success = cartService.add(userId, selectAndNumber);
         if (success) {
-            // TODO 最好返回一个什么信息给前台
+            // TODO 前台弹出成功的窗口
         }
     }
 
@@ -67,6 +67,17 @@ public class CartController {
             model.addAttribute("shops", shops);
             return "cart";
         }
+        // TODO 返回一个失败的页面
+    }
+
+    @PostMapping("/increase")
+    public String increase(Model model, @RequestBody List<CartDTO> cartDTOS) {
+
+    }
+
+    @PostMapping("/decrease")
+    public String increase(Model model, @RequestBody List<CartDTO> cartDTOS) {
+
     }
 }
 
