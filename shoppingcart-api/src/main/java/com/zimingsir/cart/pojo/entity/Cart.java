@@ -14,7 +14,6 @@ import lombok.experimental.Accessors;
 public class Cart {
     private Integer id;
     private Integer userId;
-    private Integer commodityId;
     private Integer skuId;
     private Integer number;
     private Integer revision;

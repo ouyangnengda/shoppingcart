@@ -1223,14 +1223,12 @@
       <Position>9</Position>
       <Comment>更新人</Comment>
       <DataType>bigint(20) unsigned|0s</DataType>
-      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="280" parent="233" name="update_time">
       <Position>10</Position>
       <Comment>更新时间</Comment>
       <DataType>datetime|0s</DataType>
-      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="281" parent="233" name="is_effective">
@@ -1267,7 +1265,7 @@
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="286" parent="234" name="sku_id">
+    <column id="286" parent="234" name="commodity_id">
       <Position>4</Position>
       <DataType>bigint(20) unsigned|0s</DataType>
       <ColumnKind>normal</ColumnKind>

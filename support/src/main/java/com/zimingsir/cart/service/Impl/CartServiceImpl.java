@@ -1,13 +1,14 @@
 package com.zimingsir.cart.service.Impl;
 
 import com.zimingsir.cart.dao.SkuDAO;
-import com.zimingsir.cart.dao.vo.ShopVO;
+import com.zimingsir.cart.pojo.vo.ShopVO;
 import com.zimingsir.cart.dubbo.ShoppingCartApi;
 import com.zimingsir.cart.pojo.dto.CartDTO;
 import com.zimingsir.cart.service.CartService;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.stereotype.Service;
 
@@ -17,6 +18,7 @@ import org.springframework.stereotype.Service;
  * @Created: 2020年05月18日 10:35:00
  **/
 @Service
+@Slf4j
 public class CartServiceImpl implements CartService {
 
     private final SkuDAO skuDAO;
@@ -39,7 +41,11 @@ public class CartServiceImpl implements CartService {
     @Override
     public boolean add(Integer userId, String selectAndNumber) {
 
-        CartDTO cartDTO = transfer(selectAndNumber);
+        if (userId > 2) {
+            return false;
+        }
+
+        CartDTO cartDTO = build(selectAndNumber);
         if (cartDTO == null) {
             return false;
         }
@@ -53,16 +59,19 @@ public class CartServiceImpl implements CartService {
         return false;
     }
 
-    private CartDTO transfer(String selectAndNumber) {
+    private CartDTO build(String selectAndNumber) {
 
         String regex = ":";
         String[] afterSplit = selectAndNumber.split(regex);
-        String selectIndex = afterSplit[1];
+        String selectIndex = afterSplit[0];
+        log.info(selectIndex);
         Integer skuId = skuDAO.getId(selectIndex);
         if (skuId == null || skuId <= 0) {
             return null;
         }
-        Integer number = Integer.valueOf(afterSplit[2]);
+        Integer number = Integer.valueOf(afterSplit[1]);
+        log.info(number.toString());
+
         return new CartDTO(skuId, number);
     }
 
@@ -85,7 +94,7 @@ public class CartServiceImpl implements CartService {
      * @param userId
      * @Method：select
      * @Description: 获取该用户的购物车
-     * @return: java.util.List<com.zimingsir.cart.dao.vo.ShopVO>
+     * @return: java.util.List<com.zimingsir.cart.pojo.vo.ShopVO>
      * @Date: 2020/5/18 14:54
      */
     @Override

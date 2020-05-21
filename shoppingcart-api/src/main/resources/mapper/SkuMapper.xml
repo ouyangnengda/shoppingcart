@@ -4,4 +4,8 @@
     <select id="getCommodityId" resultType="Integer">
         select commodity_id from cart_sku where id=#{skuId};
     </select>
+
+    <select id="get" resultType="com.zimingsir.cart.pojo.entity.Sku">
+        select id, price, stock, value_index, commodity_id, revision, create_by, create_time, update_by, update_time from cart_sku where id = #{id};
+    </select>
 </mapper>

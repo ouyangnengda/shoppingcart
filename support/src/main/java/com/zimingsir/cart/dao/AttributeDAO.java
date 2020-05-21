@@ -11,5 +11,7 @@ import org.springframework.stereotype.Repository;
  **/
 @Repository
 public interface AttributeDAO {
-    List<AttributeVO> getAttributeByCommodityId(Integer id);
+    List<AttributeVO> get(List<Integer> skus);
+
+    List<AttributeVO> getByCommodity(Integer commodityId);
 }

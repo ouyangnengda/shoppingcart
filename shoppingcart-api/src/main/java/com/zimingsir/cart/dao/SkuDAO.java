@@ -1,5 +1,6 @@
 package com.zimingsir.cart.dao;
 
+import com.zimingsir.cart.pojo.entity.Sku;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -10,4 +11,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface SkuDAO {
     Integer getCommodityId(Integer skuId);
+
+    Sku get(Integer id);
 }

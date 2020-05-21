@@ -2,6 +2,7 @@ package com.zimingsir.cart.service.Impl;
 
 import com.zimingsir.cart.dao.CartDAO;
 import com.zimingsir.cart.dao.SkuDAO;
+import com.zimingsir.cart.pojo.dto.CartDTO;
 import com.zimingsir.cart.pojo.entity.Cart;
 import com.zimingsir.cart.pojo.vo.CartVO;
 import com.zimingsir.cart.service.ShoppingCart;
@@ -34,13 +35,13 @@ public class ShoppingCartImpl implements ShoppingCart {
      * @Date: 2020/5/15 20:33
      */
     @Override
-    public List<Integer> insert(Integer userId, List<Integer> skuIds) {
-        List<Integer> failResult = new ArrayList<>(skuIds.size());
+    public List<CartDTO> insert(Integer userId, List<CartDTO> skuIds) {
+        List<CartDTO> failResult = new ArrayList<>(skuIds.size());
         if (userId != null && userId > 0 && skuIds.size() > 0) {
-            for (Integer skuId : skuIds) {
-                boolean success= insertSku(userId, skuId);
+            for (CartDTO sku : skuIds) {
+                boolean success = insertSku(userId, sku);
                 if (!success) {
-                    failResult.add(skuId);
+                    failResult.add(sku);
                 }
             }
             return failResult;
@@ -62,44 +63,52 @@ public class ShoppingCartImpl implements ShoppingCart {
 
     /**
      * @param userId
-     * @param skuId
+     * @param sku
      * @Method：insertSku
-     * @Description: 向数据库中插入一条sku
+     * @Description: 如果记录已存在，那就增加该商品数量；如果不存在，那就插入。
      * @return: java.lang.Integer
      * @Date: 2020/5/15 20:22
      */
-    private boolean insertSku(Integer userId, Integer skuId) {
-        Integer id = cartDAO.getId(userId, skuId);
+    private boolean insertSku(Integer userId, CartDTO sku) {
+
+        Integer id = cartDAO.getId(userId, sku.getSkuId());
+        // 原记录不存在
         if (id == null) {
-            Cart cart = buildCart(userId, skuId);
+            Cart cart = buildCart(userId, sku.getSkuId(), sku.getNumber());
             if (cart == null) {
                 return false;
             }
             cartDAO.insert(cart);
             // 插入成功
-            if (cart.getNumber().equals(cartDAO.getNumber(cart.getSkuId()))) {
+            if (cart.getNumber().equals(cartDAO.getNumber(cart.getUserId(),cart.getSkuId()))) {
                 return true;
             }
+            // 原记录存在，那就增加增加该记录的数量
         } else {
             // TODO 乐观锁不会用
-            // Integer lock = cartDAO.lock(skuId);
+            // Integer lock = cartDAO.lock(sku);
             // if (lock > 0) {
             //     cartDAO.incrNumber(id);
             //     cartDAO.unlock(id, lock);
             //     return 1;
             // }
-
+            Integer stock = skuDAO.get(sku.getSkuId()).getStock();
+            if (stock > sku.getNumber()) {
+                cartDAO.incrNumber(id, sku.getNumber());
+                return true;
+            }
         }
         return false;
     }
 
-    private Cart buildCart(Integer userId, Integer skuId) {
+    private Cart buildCart(Integer userId, Integer skuId, Integer number) {
         Cart cart = new Cart();
         Integer commodityId = skuDAO.getCommodityId(skuId);
         if (commodityId == null) {
             return null;
         }
-        cart.setUserId(userId).setCommodityId(commodityId).setSkuId(skuId).setNumber(1).setCreateBy(userId).setCreateTime(LocalDateTime.now());
+        cart.setUserId(userId).setSkuId(skuId).setNumber(number).setCreateBy(userId).setCreateTime(LocalDateTime.now());
         return cart;
     }
+
 }

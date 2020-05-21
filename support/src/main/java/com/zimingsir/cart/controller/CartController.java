@@ -1,16 +1,14 @@
 package com.zimingsir.cart.controller;
 
-import com.sun.xml.internal.bind.v2.TODO;
-import com.zimingsir.cart.dao.vo.ShopVO;
 import com.zimingsir.cart.dubbo.ShoppingCartApi;
-import com.zimingsir.cart.pojo.dto.CartDTO;
 import com.zimingsir.cart.service.CartService;
-import java.util.List;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.dubbo.config.annotation.Reference;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * @Description:
@@ -25,11 +23,8 @@ public class CartController {
     @Reference
     private ShoppingCartApi cart;
 
-    private final CartService cartService;
-
-    public CartController(CartService cartService) {
-        this.cartService = cartService;
-    }
+    @Autowired
+    CartService cartService;
 
     /**
      * @param model
@@ -40,13 +35,13 @@ public class CartController {
      * @return: java.lang.String
      * @Date: 2020/5/18 10:59
      */
-    @PostMapping("/add")
-    public void add(Model model, @RequestParam("userId") Integer userId, @RequestParam("selectAndNumber") String selectAndNumber) {
-
+    @RequestMapping("/add")
+    public String add(Model model, @RequestParam("userId") Integer userId, @RequestParam("selectAndNumber") String selectAndNumber) {
         boolean success = cartService.add(userId, selectAndNumber);
         if (success) {
-            // TODO 前台弹出成功的窗口
+            return "success";
         }
+        return "fail";
     }
 
     /**
@@ -58,7 +53,7 @@ public class CartController {
      * @return: java.lang.String
      * @Date: 2020/5/18 15:18
      */
-    @PostMapping("/delete")
+    /*@PostMapping("/delete")
     public String delete(Model model, @RequestParam("userId") Integer userId, @RequestParam("skuId") Integer skuId, @RequestParam("number") Integer number) {
 
         boolean success = cartService.delete(userId, skuId, number);
@@ -78,7 +73,7 @@ public class CartController {
     @PostMapping("/decrease")
     public String increase(Model model, @RequestBody List<CartDTO> cartDTOS) {
 
-    }
+    }*/
 }
 
 

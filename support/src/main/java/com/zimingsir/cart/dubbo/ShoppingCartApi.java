@@ -1,6 +1,6 @@
 package com.zimingsir.cart.dubbo;
 
-import com.zimingsir.cart.dao.vo.ShopVO;
+import com.zimingsir.cart.pojo.vo.ShopVO;
 import com.zimingsir.cart.pojo.dto.CartDTO;
 import java.util.List;
 

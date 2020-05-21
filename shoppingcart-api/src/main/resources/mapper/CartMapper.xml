@@ -9,20 +9,20 @@
     </select>
     <update id="incrNumber">
         update cart_cart
-        set number=number + 1
+        set number=#{number} + 1
         where id = #{id}
     </update>
 
     <insert id="insert">
-        insert into cart_cart(user_id, commodity_id, sku_id, number, create_by, create_time)
-        values (#{userId}, #{commodityId}, #{skuId}, #{number}, #{createBy}, #{createTime});
+        insert into cart_cart(user_id, sku_id, number, create_by, create_time)
+        values (#{userId}, #{skuId}, #{number}, #{createBy}, #{createTime});
 
     </insert>
 
     <select id="getNumber" resultType="Integer">
         select number
         from cart_cart
-        where sku_id = #{skuId};
+        where user_id=#{userId} AND sku_id = #{skuId};
     </select>
 
     <update id="lock">
@@ -43,7 +43,6 @@
     <select id="get" resultType="com.zimingsir.cart.pojo.entity.Cart">
         select id,
                user_id,
-               commodity_id,
                sku_id,
                number,
                revision,
@@ -76,14 +75,17 @@
         select cart.sku_id,
                cart.number,
                commodity.shop_name,
-               commodity.name      as commodityName,
+               commodity.name  as commodityName,
                commodity.img_url,
                sku.value_index as attributeIndex,
                sku.price
         from cart_cart cart
-                 left outer join cart_commodity commodity on cart.commodity_id = commodity.id
                  left outer join cart_sku sku on cart.sku_id = sku.id
-        where cart.user_id = #{userId};
+                 left outer join cart_commodity commodity on (select sku2.commodity_id
+                                                              from cart_sku sku2
+                                                              where id = sku.id) = commodity.id
+
+                                                              where cart.user_id = #{userId};
     </select>
 
     <select id="getValue" parameterType="String" resultType="String">

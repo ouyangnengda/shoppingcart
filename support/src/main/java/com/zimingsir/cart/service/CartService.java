@@ -1,6 +1,6 @@
 package com.zimingsir.cart.service;
 
-import com.zimingsir.cart.dao.vo.ShopVO;
+import com.zimingsir.cart.pojo.vo.ShopVO;
 import java.util.List;
 
 /**

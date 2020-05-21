@@ -40,7 +40,7 @@ class CartDAOTest extends BaseTest {
 
     private Cart buildCart(Integer userId, Integer skuId) {
         Cart cart = new Cart();
-        cart.setUserId(userId).setCommodityId(32).setSkuId(skuId).setNumber(1).setCreateBy(userId).setCreateTime(LocalDateTime.now());
+        cart.setUserId(userId).setSkuId(skuId).setNumber(1).setCreateBy(userId).setCreateTime(LocalDateTime.now());
         return cart;
     }
 

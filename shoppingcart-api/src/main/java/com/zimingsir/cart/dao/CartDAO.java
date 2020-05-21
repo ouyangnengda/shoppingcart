@@ -17,11 +17,11 @@ public interface CartDAO {
 
     Integer getId(@Param("userId") Integer userId, @Param("skuId") Integer skuId);
 
-    void incrNumber(@Param("id") Integer id);
+    void incrNumber(@Param("id") Integer id, @Param("number") Integer number);
 
     void insert(Cart cart);
 
-    Integer getNumber(Integer skuId);
+    Integer getNumber(@Param("userId") Integer userId, @Param("skuId") Integer skuId);
 
     void unlock(Integer id, Integer lock);
 

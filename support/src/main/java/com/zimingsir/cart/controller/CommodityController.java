@@ -2,6 +2,7 @@ package com.zimingsir.cart.controller;
 
 import com.zimingsir.cart.dao.AttributeDAO;
 import com.zimingsir.cart.dao.CommodityDAO;
+import com.zimingsir.cart.dao.SkuDAO;
 import com.zimingsir.cart.dubbo.ShoppingCartApi;
 import com.zimingsir.cart.pojo.vo.AttributeVO;
 import com.zimingsir.cart.pojo.vo.CommodityVO;
@@ -22,13 +23,17 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/commodity")
 @Slf4j
 public class CommodityController {
+
+    private final SkuDAO skuDAO;
     private final AttributeDAO attributeDAO;
     private final CommodityService commodityService;
     private final CommodityDAO commodityDAO;
-    public CommodityController(CommodityService commodityService, CommodityDAO commodityDAO, AttributeDAO attributeDAO) {
+
+    public CommodityController(CommodityService commodityService, CommodityDAO commodityDAO, AttributeDAO attributeDAO, SkuDAO skuDAO) {
         this.commodityService = commodityService;
         this.commodityDAO = commodityDAO;
         this.attributeDAO = attributeDAO;
+        this.skuDAO = skuDAO;
     }
 
     @Reference
@@ -36,13 +41,16 @@ public class CommodityController {
 
     @GetMapping("/{commodityId}")
     public String getCommodity(@PathVariable("commodityId") Integer commodityId, Model model) {
+
         CommodityVO commodity = commodityService.getCommodityById(commodityId);
-        if (commodity != null) {
+        List<AttributeVO> attributes = attributeDAO.getByCommodity(commodityId);
+
+        if (commodity != null && attributes != null) {
             model.addAttribute("commodity", commodity);
+            model.addAttribute("attributes", attributes);
+            return "commodity";
         }
-        List<AttributeVO> attributes = attributeDAO.getAttributeByCommodityId(commodityId);
-        model.addAttribute("attributes", attributes);
-        return "commodity";
+        return null;
     }
 
     @PostMapping("/addInCart")

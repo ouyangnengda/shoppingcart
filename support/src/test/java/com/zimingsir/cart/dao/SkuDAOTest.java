@@ -4,10 +4,12 @@ import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.util.Assert;
 
-import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 @Slf4j
+@Transactional
 class SkuDAOTest {
 
     @Autowired
@@ -16,7 +18,12 @@ class SkuDAOTest {
     @Test
     public void getSkuIdBySelectIndex() {
         String selectIndex = "1_4_7_8";
-        log.info(skuDAO.getSkuIdBySelectIndex(selectIndex).toString());
+        Assert.isTrue(skuDAO.getId(selectIndex) == 2, "查询sku1478id不等于2");
+    }
+
+    @Test
+    public void getIdByCommodityId() {
+        Assert.notEmpty(skuDAO.getIdByCommodityId(1).toArray(),"获取1号商品的sku列表失败");
     }
 
 
