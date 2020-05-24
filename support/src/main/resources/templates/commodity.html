@@ -37,7 +37,6 @@
         <!--        TODO 完成控制器功能-->
         <form th:action="@{/cart/add}" method="post">
             <div>
-
                 selectAndNumber:<input type="text" id="adsf"  name="selectAndNumber"/>
 <!--                TODO 用户id这里用用什么传进来-->
                 <input type="hidden" id="adsfadf" name="userId" value="1"/>
@@ -46,6 +45,7 @@
                 <input type="submit" id="submit" name="submit_button" value="提交"/>
             </div>
         </form>
+        <a th:href="@{'/cart/' + ${1}}">购物车</a>
     </div>
 </div>
 

@@ -6,10 +6,10 @@
 </head>
 <body>
 <table>
-    <tr th:each="shop : ${cartVO.shopVOs}">
+    <tr th:each="shop : ${shopVOs}">
         <div th:text="${shop.shopName}">店铺名称</div>
         <table>
-            <tr th:each="sku : ${skuVOs}">
+            <tr th:each="sku : ${shop.skuVOs}">
                 <div id="commodityBox" style="display: flex">
                     <img th:src="@{${sku.imgUrl}}" height="400" alt="商品效果图" id="photo"/>
                     <div style="font-size: 30px">
@@ -23,15 +23,14 @@
                         <div style="display: flex">数量:
                             <div th:text="${sku.number}">数量：</div>
                         </div>
-                        <div>
-                            <table>
-                                <tr th:each="value : ${sku.values}">
-
-                                    <div th:text="${value} + '+'"></div>
-
-                                </tr>
-                            </table>
+                        <div style="display: flex">sku组合：
+                                <div th:each="value : ${sku.values}">
+                                    <div style="display: flex" th:text="'[' + ${value} + ']'"></div>
+                                </div>
                         </div>
+                        <a th:href="@{'/cart/increase/' + ${sku.id} + '/1'}"><div>数量增加1</div></a>
+                        <a th:href="@{'/cart/decrease/' + ${sku.id} + '/1'}"><div>数量减少1</div></a>
+                        <a th:href="@{'/cart/delete/' + ${sku.id} + '/' + ${sku.number}}"><div>删除</div></a>
                     </div>
                 </div>
             </tr>

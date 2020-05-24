@@ -2,9 +2,11 @@ package com.zimingsir.cart.service.Impl;
 
 import com.zimingsir.cart.dao.CartDAO;
 import com.zimingsir.cart.dao.SkuDAO;
+import com.zimingsir.cart.dao.UserDAO;
 import com.zimingsir.cart.pojo.dto.CartDTO;
 import com.zimingsir.cart.pojo.entity.Cart;
-import com.zimingsir.cart.pojo.vo.CartVO;
+import com.zimingsir.cart.pojo.entity.User;
+import com.zimingsir.cart.pojo.vo.ShopVO;
 import com.zimingsir.cart.service.ShoppingCart;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -26,39 +28,83 @@ public class ShoppingCartImpl implements ShoppingCart {
     @Autowired
     SkuDAO skuDAO;
 
+    @Autowired
+    UserDAO userDAO;
+
     /**
      * @param userId
-     * @param skuIds
+     * @param skus
      * @Method：insert
      * @Description: 向数据库中插入一组sku
      * @return: java.util.List<java.lang.Integer>
      * @Date: 2020/5/15 20:33
      */
     @Override
-    public List<CartDTO> insert(Integer userId, List<CartDTO> skuIds) {
-        List<CartDTO> failResult = new ArrayList<>(skuIds.size());
-        if (userId != null && userId > 0 && skuIds.size() > 0) {
-            for (CartDTO sku : skuIds) {
-                boolean success = insertSku(userId, sku);
-                if (!success) {
+    public List<CartDTO> insert(Integer userId, List<CartDTO> skus) {
+        List<CartDTO> failResult = new ArrayList<>();
+        if (check(userId, skus)) {
+            for (CartDTO sku : skus) {
+                if (!insertSku(userId, sku)) {
                     failResult.add(sku);
                 }
             }
-            return failResult;
         }
-        return null;
+        return failResult;
+    }
+
+    private boolean check(Integer userId, List<CartDTO> skus) {
+        if (existUser(userId)) {
+            return skus != null && skus.size() > 0;
+        }
+        return false;
+    }
+
+    private boolean existUser(Integer userId) {
+        if (userId == null || userId < 1) {
+            return false;
+        }
+        User user = userDAO.get(userId);
+        return user != null;
     }
 
     @Override
-    public CartVO select(Integer userId) {
-        if (userId == null || userId < 1) {
-            return null;
+    public List<ShopVO> select(Integer userId) {
+        if (existUser(userId)) {
+            return cartDAO.getByUserId(userId);
         }
-        // Optional<CartVO> cartVO = Optional.ofNullable(cartDAO.getByUserId(userId));
-        // if (!cartVO.isPresent()) {
-        //     return cartVO.get();
-        // }
-        return null;
+        return new ArrayList<>();
+    }
+
+    @Override
+    public List<CartDTO> delete(Integer userId, List<CartDTO> skus) {
+        List<CartDTO> failResult = new ArrayList<>();
+        if (check(userId, skus)) {
+            for (CartDTO sku : skus) {
+                if (!deleteSku(userId, sku)) {
+                    failResult.add(sku);
+                }
+            }
+        }
+        return failResult;
+    }
+
+    private boolean deleteSku(Integer userId, CartDTO sku) {
+
+        Cart current = cartDAO.getCart(userId, sku.getSkuId());
+        if (current != null) {
+            // 减少的数量大于等于购物车中的数量
+            if (sku.getNumber() >= current.getNumber()) {
+                cartDAO.delete(current.getId());
+                return cartDAO.get(current.getId()) == null;
+            // 减少的数量小于购物车中的数量
+            } else {
+                cartDAO.decrNumber(current.getId(), sku.getNumber());
+                Integer afterNumber = cartDAO.get(current.getId()).getNumber();
+                int except = current.getNumber() - sku.getNumber();
+                return afterNumber == except;
+            }
+        }
+        return false;
     }
 
     /**
@@ -71,16 +117,16 @@ public class ShoppingCartImpl implements ShoppingCart {
      */
     private boolean insertSku(Integer userId, CartDTO sku) {
 
-        Integer id = cartDAO.getId(userId, sku.getSkuId());
+        Cart current = cartDAO.getCart(userId, sku.getSkuId());
         // 原记录不存在
-        if (id == null) {
+        if (current == null) {
             Cart cart = buildCart(userId, sku.getSkuId(), sku.getNumber());
             if (cart == null) {
                 return false;
             }
             cartDAO.insert(cart);
             // 插入成功
-            if (cart.getNumber().equals(cartDAO.getNumber(cart.getUserId(),cart.getSkuId()))) {
+            if (cart.getNumber().equals(cartDAO.getNumber(cart.getUserId(), cart.getSkuId()))) {
                 return true;
             }
             // 原记录存在，那就增加增加该记录的数量
@@ -94,7 +140,7 @@ public class ShoppingCartImpl implements ShoppingCart {
             // }
             Integer stock = skuDAO.get(sku.getSkuId()).getStock();
             if (stock > sku.getNumber()) {
-                cartDAO.incrNumber(id, sku.getNumber());
+                cartDAO.incrNumber(current.getId(), sku.getNumber());
                 return true;
             }
         }

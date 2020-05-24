@@ -3,10 +3,15 @@
 <mapper namespace="com.zimingsir.cart.dao.CommodityDAO">
 
     <select id="getAllCommodity" resultType="com.zimingsir.cart.pojo.vo.CommodityVO">
-        select id, name, img_url, brand, price, shop_name from cart_commodity where is_effective = 1;
+        select id, name, img_url, brand, price, shop_name
+        from cart_commodity
+        where is_effective = 1;
     </select>
 
     <select id="getCommodityById" resultType="com.zimingsir.cart.pojo.vo.CommodityVO">
-        select id, name, img_url, brand, price, shop_name from cart_commodity where is_effective = 1 and id = #{id};
+        select id, name, img_url, brand, price, shop_name
+        from cart_commodity
+        where is_effective = 1
+          and id = #{id};
     </select>
 </mapper>

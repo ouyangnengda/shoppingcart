@@ -10,7 +10,7 @@ import lombok.Data;
  * @Created: 2020年05月16日 08:55:00
  **/
 @Data
-class SkuVO implements Serializable {
+public class SkuVO implements Serializable {
     private Integer id;
     private String imgUrl;
     private String commodityName;

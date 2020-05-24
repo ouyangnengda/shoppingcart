@@ -22,3 +22,5 @@ dubbo:
     address: zookeeper://39.98.113.163:2181
   scan:
     base-packages: com.zimingsir.cart.dubbo
+  consumer:
+    timeout: 3000

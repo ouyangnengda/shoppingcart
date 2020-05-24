@@ -1,5 +1,6 @@
 package com.zimingsir.cart.dao;
 
+import com.zimingsir.cart.pojo.entity.Sku;
 import java.util.List;
 import org.springframework.stereotype.Repository;
 
@@ -13,4 +14,6 @@ public interface SkuDAO {
     Integer getId(String selectIndex);
 
     List<Integer> getIdByCommodityId(Integer commodityId);
+
+    Sku get(Integer skuId);
 }

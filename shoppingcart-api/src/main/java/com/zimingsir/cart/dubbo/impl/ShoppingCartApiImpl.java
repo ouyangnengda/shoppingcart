@@ -2,7 +2,7 @@ package com.zimingsir.cart.dubbo.impl;
 
 import com.zimingsir.cart.dubbo.ShoppingCartApi;
 import com.zimingsir.cart.pojo.dto.CartDTO;
-import com.zimingsir.cart.pojo.vo.CartVO;
+import com.zimingsir.cart.pojo.vo.ShopVO;
 import com.zimingsir.cart.service.ShoppingCart;
 import java.util.List;
 import lombok.extern.slf4j.Slf4j;
@@ -22,8 +22,8 @@ public class ShoppingCartApiImpl implements ShoppingCartApi {
     ShoppingCart cart;
 
     @Override
-    public Integer delete(Integer userId, List<Integer> skuIds) {
-        return null;
+    public List<CartDTO> delete(Integer userId, List<CartDTO> skuIds) {
+        return cart.delete(userId, skuIds);
     }
 
     /**
@@ -36,12 +36,11 @@ public class ShoppingCartApiImpl implements ShoppingCartApi {
      */
     @Override
     public List<CartDTO> insert(Integer userId, List<CartDTO> skuIds) {
-        log.info(skuIds.getClass().toString());
         return cart.insert(userId, skuIds);
     }
 
     @Override
-    public CartVO select(Integer userId) {
+    public List<ShopVO> select(Integer userId) {
         return cart.select(userId);
     }
 }

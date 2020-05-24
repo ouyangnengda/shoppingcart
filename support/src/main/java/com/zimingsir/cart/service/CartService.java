@@ -15,4 +15,6 @@ public interface CartService {
     List<ShopVO> select(Integer userId);
 
     boolean delete(Integer userId, Integer skuId, Integer number);
+
+    boolean add(Integer userId, Integer skuId, Integer number);
 }

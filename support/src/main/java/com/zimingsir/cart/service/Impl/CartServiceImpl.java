@@ -1,15 +1,18 @@
 package com.zimingsir.cart.service.Impl;
 
 import com.zimingsir.cart.dao.SkuDAO;
-import com.zimingsir.cart.pojo.vo.ShopVO;
+import com.zimingsir.cart.dao.UserDAO;
 import com.zimingsir.cart.dubbo.ShoppingCartApi;
 import com.zimingsir.cart.pojo.dto.CartDTO;
+import com.zimingsir.cart.pojo.entity.Sku;
+import com.zimingsir.cart.pojo.entity.User;
+import com.zimingsir.cart.pojo.vo.ShopVO;
 import com.zimingsir.cart.service.CartService;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.dubbo.config.annotation.Reference;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -30,6 +33,9 @@ public class CartServiceImpl implements CartService {
         this.skuDAO = skuDAO;
     }
 
+    @Autowired
+    UserDAO userDAO;
+
     /**
      * @param userId
      * @param selectAndNumber
@@ -40,26 +46,28 @@ public class CartServiceImpl implements CartService {
      */
     @Override
     public boolean add(Integer userId, String selectAndNumber) {
+        List<CartDTO> failResult = new ArrayList<>();
 
-        if (userId > 2) {
+        if (!existUser(userId)) {
             return false;
         }
 
-        CartDTO cartDTO = build(selectAndNumber);
+        List<CartDTO> cartDTO = build(selectAndNumber);
         if (cartDTO == null) {
+            failResult = cartDTO;
             return false;
         }
 
-        List<CartDTO> failResult = add(userId, buildList(cartDTO));
-        if (failResult != null && failResult.isEmpty()) {
+        failResult = add(userId, cartDTO);
+        if (failResult.isEmpty()) {
             return true;
         }
         // 处理插入失败的sku
-        solveFailSkus(failResult);
+        solveFailSku(failResult);
         return false;
     }
 
-    private CartDTO build(String selectAndNumber) {
+    private List<CartDTO> build(String selectAndNumber) {
 
         String regex = ":";
         String[] afterSplit = selectAndNumber.split(regex);
@@ -72,8 +80,9 @@ public class CartServiceImpl implements CartService {
         Integer number = Integer.valueOf(afterSplit[1]);
         log.info(number.toString());
 
-        return new CartDTO(skuId, number);
+        return buildList(new CartDTO(skuId, number));
     }
+
 
     private List<CartDTO> buildList(CartDTO cartDTO) {
         ArrayList<CartDTO> cartDTOS = new ArrayList<>();
@@ -81,7 +90,7 @@ public class CartServiceImpl implements CartService {
         return cartDTOS;
     }
 
-    private void solveFailSkus(List<CartDTO> failResult) {
+    private void solveFailSku(List<CartDTO> failResult) {
 
     }
 
@@ -99,32 +108,63 @@ public class CartServiceImpl implements CartService {
      */
     @Override
     public List<ShopVO> select(Integer userId) {
-
-        Optional<Integer> userIdOp = Optional.ofNullable(userId);
-        if (userIdOp.isPresent()) {
+        if (existUser(userId)) {
             return cartApi.select(userId);
         }
         return null;
     }
 
+    private boolean existUser(Integer userId) {
+        if (userId == null || userId < 1) {
+            return false;
+        }
+        User user = userDAO.get(userId);
+        return user != null;
+    }
+
     /**
-     * @Method：delete
-     * @Description:
      * @param userId
      * @param skuId
      * @param number
+     * @Method：delete
+     * @Description:
      * @return: boolean
      * @Date: 2020/5/18 15:46
      */
     @Override
     public boolean delete(Integer userId, Integer skuId, Integer number) {
-
-        CartDTO cartDTO = new CartDTO(skuId, number);
-        List<CartDTO> failResult = cartApi.delete(userId, buildList(cartDTO));
-        if (failResult.isEmpty()) {
-            return true;
+        if (existUser(userId)) {
+            List<CartDTO> failResult = cartApi.delete(userId, build(skuId, number));
+            if (failResult.isEmpty()) {
+                return true;
+            } else {
+                solveFailSku(failResult);
+            }
         }
-        solveFailSkus(failResult);
         return false;
+
+    }
+
+    @Override
+    public boolean add(Integer userId, Integer skuId, Integer number) {
+        if (existUser(userId)) {
+            List<CartDTO> failResult = cartApi.insert(userId, build(skuId, number));
+            if (failResult.isEmpty()) {
+                return true;
+            } else {
+                solveFailSku(failResult);
+            }
+        }
+        return false;
+    }
+
+    private List<CartDTO> build(Integer skuId, Integer number) {
+
+        Sku sku = skuDAO.get(skuId);
+        if (sku != null) {
+            CartDTO cartDTO = new CartDTO(skuId, number);
+            return buildList(cartDTO);
+        }
+        return null;
     }
 }

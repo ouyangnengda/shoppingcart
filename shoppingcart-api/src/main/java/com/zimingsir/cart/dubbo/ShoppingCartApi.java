@@ -1,8 +1,8 @@
 package com.zimingsir.cart.dubbo;
 
-        import com.zimingsir.cart.pojo.dto.CartDTO;
-        import com.zimingsir.cart.pojo.vo.CartVO;
-        import java.util.List;
+import com.zimingsir.cart.pojo.dto.CartDTO;
+import com.zimingsir.cart.pojo.vo.ShopVO;
+import java.util.List;
 
 /**
  * @Description:
@@ -10,8 +10,8 @@ package com.zimingsir.cart.dubbo;
  * @Created: 2020年05月09日 20:45:00
  **/
 public interface ShoppingCartApi {
-    Integer delete(Integer userId, List<Integer> skuIds);
+    List<CartDTO> delete(Integer userId, List<CartDTO> skuIds);
     List<CartDTO> insert(Integer userId, List<CartDTO> skuIds);
     // String update(Integer userId, String selectIndex);
-    CartVO select(Integer userId);
+    List<ShopVO> select(Integer userId);
 }

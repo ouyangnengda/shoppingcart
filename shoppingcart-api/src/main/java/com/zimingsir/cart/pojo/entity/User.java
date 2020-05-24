@@ -2,20 +2,19 @@ package com.zimingsir.cart.pojo.entity;
 
 import java.time.LocalDateTime;
 import lombok.Data;
-import lombok.experimental.Accessors;
 
 /**
  * @Description:
  * @Author: 欧阳能达
- * @Created: 2020年05月15日 17:04:00
+ * @Created: 2020年05月22日 10:15:00
  **/
 @Data
-@Accessors(chain = true)
-public class Cart {
+public class User {
     private Integer id;
-    private Integer userId;
-    private Integer skuId;
-    private Integer number;
+    private String name;
+    private String password;
+    private String money;
+    private String receiveAddress;
     private Integer createBy;
     private LocalDateTime createTime;
     private Integer updateBy;

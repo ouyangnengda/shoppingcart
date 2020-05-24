@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
  * @Created: 2020年05月07日 16:56:00
  **/
 @Repository
-public interface AttributeDAO {
+public  interface AttributeDAO {
     List<AttributeVO> get(List<Integer> skus);
 
     List<AttributeVO> getByCommodity(Integer commodityId);

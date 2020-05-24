@@ -14,7 +14,7 @@
         select id, attribute_name, name
         from cart_value
         where is_effective = 1 and
-        commodity_id = #{commodityId};
+        commodity_id = #{commodityId} and is_effective = 1;
     </select>
 
 </mapper>

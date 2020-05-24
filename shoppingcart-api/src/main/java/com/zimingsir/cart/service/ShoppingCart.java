@@ -1,7 +1,7 @@
 package com.zimingsir.cart.service;
 
 import com.zimingsir.cart.pojo.dto.CartDTO;
-import com.zimingsir.cart.pojo.vo.CartVO;
+import com.zimingsir.cart.pojo.vo.ShopVO;
 import java.util.List;
 
 /**
@@ -10,7 +10,9 @@ import java.util.List;
  * @Created: 2020年04月18日 13:21:00
  **/
 public interface ShoppingCart {
-    List<CartDTO> insert(Integer userId, List<CartDTO> skuIds);
+    List<CartDTO> insert(Integer userId, List<CartDTO> skus);
 
-    CartVO select(Integer userId);
+    List<ShopVO> select(Integer userId);
+
+    List<CartDTO> delete(Integer userId, List<CartDTO> skus);
 }

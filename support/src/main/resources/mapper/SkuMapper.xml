@@ -4,12 +4,29 @@
     <select id="getId" resultType="Integer">
         select id
         from cart_sku
-        where value_index = #{selectIndex};
+        where value_index = #{selectIndex}
+          and is_effective = 1;
     </select>
 
     <select id="getIdByCommodityId" resultType="Integer">
         select id
         from cart_sku
-        where commodity_id = #{commodityId};
+        where commodity_id = #{commodityId}
+          and is_effective = 1;
+    </select>
+
+    <select id="get" resultType="com.zimingsir.cart.pojo.entity.Sku">
+        select id,
+               price,
+               stock,
+               value_index,
+               commodity_id,
+               create_by,
+               create_time,
+               update_by,
+               update_time
+        from cart_sku
+        where id = #{id}
+          and is_effective = 1;
     </select>
 </mapper>

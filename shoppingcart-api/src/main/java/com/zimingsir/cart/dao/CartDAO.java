@@ -15,7 +15,7 @@ import org.springframework.stereotype.Repository;
 public interface CartDAO {
     void lock(Integer id);
 
-    Integer getId(@Param("userId") Integer userId, @Param("skuId") Integer skuId);
+    Cart getCart(@Param("userId") Integer userId, @Param("skuId") Integer skuId);
 
     void incrNumber(@Param("id") Integer id, @Param("number") Integer number);
 
@@ -30,5 +30,9 @@ public interface CartDAO {
     List<ShopVO> getByUserId(Integer userID);
 
     List<String> getValue(String attributeIndex);
+
+    void delete(Integer id);
+
+    void decrNumber(Integer id, Integer number);
 }
 

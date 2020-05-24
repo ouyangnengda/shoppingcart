@@ -5,12 +5,14 @@
         select id
         from cart_cart
         where user_id = #{userId}
-          and sku_id = #{skuId};
+          and sku_id = #{skuId}
+          and is_effective = 1;
     </select>
     <update id="incrNumber">
         update cart_cart
         set number=#{number} + 1
         where id = #{id}
+          and is_effective = 1;
     </update>
 
     <insert id="insert">
@@ -22,7 +24,9 @@
     <select id="getNumber" resultType="Integer">
         select number
         from cart_cart
-        where user_id=#{userId} AND sku_id = #{skuId};
+        where user_id = #{userId}
+          AND sku_id = #{skuId}
+          and is_effective = 1;
     </select>
 
     <update id="lock">
@@ -52,7 +56,8 @@
                update_time,
                is_effective
         from cart_cart
-        where id = #{id};
+        where id = #{id}
+          and is_effective = 1;
     </select>
 
     <!--TODO 注意下面这一大段语句-->
@@ -85,7 +90,10 @@
                                                               from cart_sku sku2
                                                               where id = sku.id) = commodity.id
 
-                                                              where cart.user_id = #{userId};
+        where cart.user_id = #{userId}
+          and cart.is_effective = 1
+          and commodity.is_effective = 1
+          and sku.is_effective = 1;
     </select>
 
     <select id="getValue" parameterType="String" resultType="String">
@@ -93,7 +101,35 @@
         <foreach collection="attributeIndex.split('_')" item="item" separator=",">
             #{item}
         </foreach>
-
         )
     </select>
+
+    <select id="getCart" resultType="com.zimingsir.cart.pojo.entity.Cart">
+        select id,
+               user_id,
+               sku_id,
+               number,
+               create_by,
+               create_time,
+               update_by,
+               update_time
+        from cart_cart
+        where user_id = #{userId}
+          and sku_id = #{skuId}
+          and is_effective = 1;
+    </select>
+
+    <update id="delete">
+        update cart_cart
+        set is_effective = 0
+        where id = #{id}
+          and is_effective = 1;
+    </update>
+
+    <update id="decrNumber">
+        update cart_cart
+        set number=number - #{number}
+        where id = #{id}
+          and is_effective = 1;
+    </update>
 </mapper>
